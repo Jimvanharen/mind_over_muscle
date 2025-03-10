@@ -53,14 +53,6 @@ export function Navbar() {
             Personal Training
           </Link>
           <Link
-            href="/aangepaste-dieten"
-            className={`text-sm font-medium uppercase tracking-wide hover:text-red-500 transition ${
-              pathname === "/aangepaste-dieten" ? "text-red-500" : "text-white"
-            }`}
-          >
-            Diëten
-          </Link>
-          <Link
             href="/transformaties"
             className={`text-sm font-medium uppercase tracking-wide hover:text-red-500 transition ${
               pathname === "/transformaties" ? "text-red-500" : "text-white"
@@ -112,16 +104,6 @@ export function Navbar() {
                   }`}
                 >
                   Personal Training
-                </Link>
-                <Link
-                  href="/aangepaste-dieten"
-                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
-                    pathname === "/aangepaste-dieten"
-                      ? "text-red-500"
-                      : "text-white"
-                  }`}
-                >
-                  Diëten
                 </Link>
                 <Link
                   href="/transformaties"
