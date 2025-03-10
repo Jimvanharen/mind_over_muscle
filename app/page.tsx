@@ -12,13 +12,6 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
         <div className="container flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
-              alt="Mind Over Muscle"
-              width={40}
-              height={40}
-              className="h-10 w-10"
-            />
             <span className="text-xl font-bold">MIND OVER MUSCLE</span>
           </Link>
 
@@ -52,7 +45,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <Button
               variant="outline"
-              className="hidden md:flex border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
+              className="hidden md:flex border-red-500 text-red-500 hover:bg-red-500 bg-gray-950 hover:text-white"
             >
               Boek een Sessie
             </Button>
@@ -132,7 +125,7 @@ export default function Home() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black"
+              className="border-white text-white hover:bg-white hover:text-black bg-gray-900"
             >
               Meer Informatie
             </Button>
