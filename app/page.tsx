@@ -4,95 +4,13 @@ import { ArrowRight, Dumbbell, Menu, Utensils } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
-        <div className="container flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold">MIND OVER MUSCLE</span>
-          </Link>
-
-          <nav className="hidden md:flex items-center gap-8">
-            <Link
-              href="#services"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Diensten
-            </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Over Mij
-            </Link>
-            <Link
-              href="#transformations"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Transformaties
-            </Link>
-            <Link
-              href="#contact"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Contact
-            </Link>
-          </nav>
-
-          <div className="flex items-center gap-4">
-            <Button
-              variant="outline"
-              className="hidden md:flex border-red-500 text-red-500 hover:bg-red-500 bg-gray-950 hover:text-white"
-            >
-              Boek een Sessie
-            </Button>
-
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Menu openen</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="bg-black border-white/10">
-                <div className="flex flex-col gap-8 mt-8">
-                  <Link
-                    href="#services"
-                    className="text-lg font-medium uppercase tracking-wide text-white hover:text-red-500 transition"
-                  >
-                    Diensten
-                  </Link>
-                  <Link
-                    href="#about"
-                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
-                  >
-                    Over Mij
-                  </Link>
-                  <Link
-                    href="#transformations"
-                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
-                  >
-                    Transformaties
-                  </Link>
-                  <Link
-                    href="#contact"
-                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
-                  >
-                    Contact
-                  </Link>
-                  <Button className="bg-red-500 hover:bg-red-600 text-white mt-4">
-                    Boek een Sessie
-                  </Button>
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
-        </div>
-      </header>
-
+      <Navbar />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

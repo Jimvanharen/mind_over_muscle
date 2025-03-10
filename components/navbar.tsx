@@ -32,13 +32,6 @@ export function Navbar() {
     >
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
-            alt="Mind Over Muscle"
-            width={40}
-            height={40}
-            className="h-10 w-10"
-          />
           <span className="text-xl font-bold">MIND OVER MUSCLE</span>
         </Link>
 
@@ -88,7 +81,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Button
             variant="outline"
-            className="hidden md:flex border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
+            className="hidden bg-gray-950 md:flex border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
           >
             Boek een Sessie
           </Button>
@@ -104,7 +97,7 @@ export function Navbar() {
               <div className="flex flex-col gap-8 mt-8">
                 <Link
                   href="/"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
                     pathname === "/" ? "text-red-500" : "text-white"
                   }`}
                 >
@@ -112,7 +105,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   href="/personal-training"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
                     pathname === "/personal-training"
                       ? "text-red-500"
                       : "text-white"
@@ -122,7 +115,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   href="/aangepaste-dieten"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
                     pathname === "/aangepaste-dieten"
                       ? "text-red-500"
                       : "text-white"
@@ -132,7 +125,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   href="/transformaties"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
                     pathname === "/transformaties"
                       ? "text-red-500"
                       : "text-white"
@@ -142,7 +135,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   href="/contact"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                  className={`text-lg text-white font-medium uppercase tracking-wide hover:text-red-500 transition ${
                     pathname === "/contact" ? "text-red-500" : "text-white"
                   }`}
                 >
