@@ -125,7 +125,7 @@ export default function Home() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black bg-gray-900"
+              className="border-white text-white hover:bg-white hover:text-black bg-black"
             >
               Meer Informatie
             </Button>
