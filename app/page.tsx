@@ -61,25 +61,25 @@ export default function Home() {
                 <div className="flex flex-col gap-8 mt-8">
                   <Link
                     href="#services"
-                    className="text-lg font-medium uppercase tracking-wide hover:text-red-500 transition"
+                    className="text-lg font-medium uppercase tracking-wide text-white hover:text-red-500 transition"
                   >
                     Diensten
                   </Link>
                   <Link
                     href="#about"
-                    className="text-lg font-medium uppercase tracking-wide hover:text-red-500 transition"
+                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
                   >
                     Over Mij
                   </Link>
                   <Link
                     href="#transformations"
-                    className="text-lg font-medium uppercase tracking-wide hover:text-red-500 transition"
+                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
                   >
                     Transformaties
                   </Link>
                   <Link
                     href="#contact"
-                    className="text-lg font-medium uppercase tracking-wide hover:text-red-500 transition"
+                    className="text-lg font-medium text-white uppercase tracking-wide hover:text-red-500 transition"
                   >
                     Contact
                   </Link>
