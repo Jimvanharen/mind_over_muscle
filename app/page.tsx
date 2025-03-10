@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2013.43.42_6524a828.jpg-oqWZcxyTYAnPB32wR6EyGDxrJc3tBs.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
               alt="Mind Over Muscle"
               width={40}
               height={40}
@@ -512,7 +512,7 @@ export default function Home() {
             <div>
               <Link href="/" className="flex items-center gap-2 mb-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2013.43.42_6524a828.jpg-oqWZcxyTYAnPB32wR6EyGDxrJc3tBs.jpeg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
                   alt="Mind Over Muscle"
                   width={40}
                   height={40}
