@@ -1,0 +1,8 @@
+services:
+  mom-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/jimvanharen/mom-production:latest
+    ports:
+      - "3000:3000"

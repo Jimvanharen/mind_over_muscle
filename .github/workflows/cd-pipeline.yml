@@ -1,0 +1,40 @@
+name: CD PIPELINE FOR MIND OVER MUSCLE
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up environment variables from secret
+        run: |
+          echo "${{ secrets.ENV_FILE_CONTENT }}" > .env
+
+      - name: Build and Push the docker image
+        run: |
+          docker login --username Jimvanharen --password ${{ secrets.GH_PAT }} ghcr.io
+          docker compose build mom-prod
+          docker push ghcr.io/jimvanharen/mom-production:latest
+
+  deploy:
+    needs: build_and_publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+            docker login ghcr.io --username Jimvanharen --password ${{ secrets.GH_PAT }}
+            docker compose pull mom-prod
+            docker compose up mom-prod -d
