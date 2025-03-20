@@ -112,6 +112,12 @@ export function Footer() {
             >
               Servicevoorwaarden
             </Link>
+            <Link
+              href="https://aethelrise.nl"
+              className="text-white/50 text-sm hover:text-red-500 transition"
+            >
+              Gemaakt door Aethelrise
+            </Link>
           </div>
         </div>
       </div>
