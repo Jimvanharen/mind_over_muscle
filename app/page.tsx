@@ -47,7 +47,7 @@ export default function Home() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black bg-black"
             >
-              <Link href="/personal-training">Meer informatie</Link>
+              <Link href="/contact">Meer informatie</Link>
             </Button>
           </div>
         </div>
