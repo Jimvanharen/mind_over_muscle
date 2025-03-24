@@ -8,6 +8,7 @@ import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { CalendlyPopup } from "./calendly/popup";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -71,12 +72,7 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button
-            variant="outline"
-            className="hidden bg-gray-950 md:flex border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
-          >
-            Boek een Sessie
-          </Button>
+          <CalendlyPopup />
 
           <Sheet>
             <SheetTrigger asChild>

@@ -5,6 +5,7 @@ import { ArrowRight, Dumbbell, Menu, Utensils } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Navbar } from "@/components/navbar";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   return (
@@ -38,14 +39,15 @@ export default function Home() {
               size="lg"
               className="bg-red-500 hover:bg-red-600 text-white"
             >
-              Begin Je Reis
+              <Link href="/personal-training">Begin Je Reis</Link>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black bg-black"
             >
-              Meer Informatie
+              <Link href="/personal-training">Meer informatie</Link>
             </Button>
           </div>
         </div>
