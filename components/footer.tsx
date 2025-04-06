@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
@@ -20,8 +20,7 @@ export function Footer() {
               <span className="text-xl font-bold">MIND OVER MUSCLE</span>
             </Link>
             <p className="text-white/70">
-              Transformatie van lichaam en geest door deskundige personal
-              training en voedingsbegeleiding.
+              Transformatie van lichaam en geest door deskundige personal training en voedingsbegeleiding.
             </p>
           </div>
 
@@ -29,42 +28,27 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Snelle Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/"
-                  className="text-white/70 hover:text-red-500 transition"
-                >
+                <Link href="/" className="text-white/70 hover:text-red-500 transition">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/personal-training"
-                  className="text-white/70 hover:text-red-500 transition"
-                >
+                <Link href="/personal-training" className="text-white/70 hover:text-red-500 transition">
                   Personal Training
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/aangepaste-dieten"
-                  className="text-white/70 hover:text-red-500 transition"
-                >
+                <Link href="/aangepaste-dieten" className="text-white/70 hover:text-red-500 transition">
                   Aangepaste Diëten
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/transformaties"
-                  className="text-white/70 hover:text-red-500 transition"
-                >
+                <Link href="/transformaties" className="text-white/70 hover:text-red-500 transition">
                   Transformaties
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-white/70 hover:text-red-500 transition"
-                >
+                <Link href="/contact" className="text-white/70 hover:text-red-500 transition">
                   Contact
                 </Link>
               </li>
@@ -74,8 +58,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Nieuwsbrief</h3>
             <p className="text-white/70 mb-4">
-              Abonneer je op mijn nieuwsbrief voor fitnesstips en exclusieve
-              aanbiedingen.
+              Abonneer je op mijn nieuwsbrief voor fitnesstips en exclusieve aanbiedingen.
             </p>
             <form className="flex gap-2">
               <input
@@ -96,31 +79,19 @@ export function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} Mind Over Muscle. Alle rechten
-            voorbehouden.
+            © {new Date().getFullYear()} Mind Over Muscle. Alle rechten voorbehouden.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <Link
-              href="/privacy-policy"
-              className="text-white/50 text-sm hover:text-red-500 transition"
-            >
+            <Link href="/privacy-policy" className="text-white/50 text-sm hover:text-red-500 transition">
               Privacybeleid
             </Link>
-            <Link
-              href="/terms-of-service"
-              className="text-white/50 text-sm hover:text-red-500 transition"
-            >
+            <Link href="/terms-of-service" className="text-white/50 text-sm hover:text-red-500 transition">
               Servicevoorwaarden
-            </Link>
-            <Link
-              href="https://aethelrise.nl"
-              className="text-white/50 text-sm hover:text-red-500 transition"
-            >
-              Gemaakt door Aethelrise
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }
+

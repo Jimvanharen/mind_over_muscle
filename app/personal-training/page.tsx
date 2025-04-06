@@ -1,9 +1,12 @@
-import Image from "next/image";
-import { CheckCircle, Clock, Dumbbell } from "lucide-react";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import Image from "next/image"
+import { CheckCircle, Clock, Dumbbell } from "lucide-react"
+import Link from "next/link"
+
+import { Button } from "@/components/ui/button"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 export default function PersonalTrainingPage() {
   return (
@@ -29,14 +32,11 @@ export default function PersonalTrainingPage() {
               PERSONAL <span className="text-red-500">TRAINING</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-              Gepersonaliseerde één-op-één trainingssessies ontworpen om je te
-              helpen je fitnessdoelen te bereiken, ongeacht je huidige niveau.
+              Gepersonaliseerde één-op-één trainingssessies ontworpen om je te helpen je fitnessdoelen te bereiken,
+              ongeacht je huidige niveau.
             </p>
-            <Button
-              size="lg"
-              className="bg-red-500 hover:bg-red-600 text-white"
-            >
-              Boek een Sessie
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
+              <Link href="/contact">Boek een Sessie</Link>
             </Button>
           </div>
         </div>
@@ -46,13 +46,10 @@ export default function PersonalTrainingPage() {
       <section className="py-20 bg-zinc-950">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              WAAROM PERSONAL TRAINING?
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">WAAROM PERSONAL TRAINING?</h2>
             <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Ontdek de voordelen van gepersonaliseerde training onder
-              begeleiding van een ervaren professional.
+              Ontdek de voordelen van gepersonaliseerde training onder begeleiding van een ervaren professional.
             </p>
           </div>
 
@@ -61,12 +58,10 @@ export default function PersonalTrainingPage() {
               <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mb-6">
                 <CheckCircle className="h-8 w-8 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-4">
-                Gepersonaliseerde Aanpak
-              </h3>
+              <h3 className="text-xl font-bold mb-4">Gepersonaliseerde Aanpak</h3>
               <p className="text-white/70">
-                Trainingsschema's op maat van jouw specifieke doelen,
-                fitnessgeschiedenis en lichaamstype voor optimale resultaten.
+                Trainingsschema's op maat van jouw specifieke doelen, fitnessgeschiedenis en lichaamstype voor optimale
+                resultaten.
               </p>
             </div>
 
@@ -76,8 +71,7 @@ export default function PersonalTrainingPage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Correcte Techniek</h3>
               <p className="text-white/70">
-                Leer de juiste uitvoering van oefeningen om blessures te
-                voorkomen en maximale resultaten te behalen.
+                Leer de juiste uitvoering van oefeningen om blessures te voorkomen en maximale resultaten te behalen.
               </p>
             </div>
 
@@ -87,8 +81,7 @@ export default function PersonalTrainingPage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Efficiënte Workouts</h3>
               <p className="text-white/70">
-                Maximaliseer je tijd in de gym met doelgerichte, efficiënte
-                trainingen die resultaten leveren.
+                Maximaliseer je tijd in de gym met doelgerichte, efficiënte trainingen die resultaten leveren.
               </p>
             </div>
           </div>
@@ -96,12 +89,10 @@ export default function PersonalTrainingPage() {
       </section>
 
       {/* Training Packages */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black" id="packages">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              TRAININGSPAKKETTEN
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">TRAININGSPAKKETTEN</h2>
             <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
             <p className="text-white/70 max-w-2xl mx-auto">
               Kies het pakket dat het beste bij jouw doelen en budget past.
@@ -113,8 +104,7 @@ export default function PersonalTrainingPage() {
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-2">Starter Pakket</h3>
                 <p className="text-white/70 mb-6">
-                  Perfect voor beginners die willen kennismaken met personal
-                  training.
+                  Perfect voor beginners die willen kennismaken met personal training.
                 </p>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">€299</span>
@@ -138,21 +128,17 @@ export default function PersonalTrainingPage() {
                     <span>Voedingsadvies</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white">
-                  Selecteer Pakket
+                <Button className="w-full bg-red-500 hover:bg-red-600 text-white" asChild>
+                  <Link href="/contact?package=starter">Selecteer Pakket</Link>
                 </Button>
               </div>
             </div>
 
             <div className="bg-zinc-950 rounded-lg border border-red-500 overflow-hidden relative">
-              <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-medium">
-                POPULAIR
-              </div>
+              <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-medium">POPULAIR</div>
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-2">Transformatie Pakket</h3>
-                <p className="text-white/70 mb-6">
-                  Ideaal voor serieuze resultaten en consistente begeleiding.
-                </p>
+                <p className="text-white/70 mb-6">Ideaal voor serieuze resultaten en consistente begeleiding.</p>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">€699</span>
                   <span className="text-white/70 ml-2">/ 12 sessies</span>
@@ -183,8 +169,8 @@ export default function PersonalTrainingPage() {
                     <span>Onbeperkte ondersteuning via WhatsApp</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white">
-                  Selecteer Pakket
+                <Button className="w-full bg-red-500 hover:bg-red-600 text-white" asChild>
+                  <Link href="/contact?package=transformatie">Selecteer Pakket</Link>
                 </Button>
               </div>
             </div>
@@ -193,8 +179,7 @@ export default function PersonalTrainingPage() {
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-2">Elite Pakket</h3>
                 <p className="text-white/70 mb-6">
-                  Voor toegewijde individuen die het maximale uit hun training
-                  willen halen.
+                  Voor toegewijde individuen die het maximale uit hun training willen halen.
                 </p>
                 <div className="mb-6">
                   <span className="text-4xl font-bold">€1299</span>
@@ -230,8 +215,8 @@ export default function PersonalTrainingPage() {
                     <span>Toegang tot exclusieve workshops</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white">
-                  Selecteer Pakket
+                <Button className="w-full bg-red-500 hover:bg-red-600 text-white" asChild>
+                  <Link href="/contact?package=elite">Selecteer Pakket</Link>
                 </Button>
               </div>
             </div>
@@ -243,13 +228,10 @@ export default function PersonalTrainingPage() {
       <section className="py-20 bg-zinc-950">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              WAT KLANTEN ZEGGEN
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">WAT KLANTEN ZEGGEN</h2>
             <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met
-              mijn personal training.
+              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met mijn personal training.
             </p>
           </div>
 
@@ -274,11 +256,9 @@ export default function PersonalTrainingPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Ik train nu 6 maanden met Mind Over Muscle en de resultaten
-                  zijn ongelooflijk. Niet alleen ben ik sterker en fitter
-                  geworden, maar mijn hele houding ten opzichte van fitness is
-                  veranderd. De persoonlijke aandacht en expertise maken echt
-                  het verschil."
+                  "Ik train nu 6 maanden met Mind Over Muscle en de resultaten zijn ongelooflijk. Niet alleen ben ik
+                  sterker en fitter geworden, maar mijn hele houding ten opzichte van fitness is veranderd. De
+                  persoonlijke aandacht en expertise maken echt het verschil."
                 </p>
                 <div>
                   <h4 className="font-bold">Thomas Bakker</h4>
@@ -307,11 +287,9 @@ export default function PersonalTrainingPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Als iemand die altijd moeite had met consistent blijven, was
-                  de persoonlijke begeleiding precies wat ik nodig had. De
-                  trainingen zijn uitdagend maar leuk, en de voedingsadviezen
-                  zijn praktisch en makkelijk te volgen. Ik heb in 3 maanden
-                  meer bereikt dan in jaren van zelf proberen."
+                  "Als iemand die altijd moeite had met consistent blijven, was de persoonlijke begeleiding precies wat
+                  ik nodig had. De trainingen zijn uitdagend maar leuk, en de voedingsadviezen zijn praktisch en
+                  makkelijk te volgen. Ik heb in 3 maanden meer bereikt dan in jaren van zelf proberen."
                 </p>
                 <div>
                   <h4 className="font-bold">Laura de Vries</h4>
@@ -336,26 +314,30 @@ export default function PersonalTrainingPage() {
         </div>
         <div className="container relative z-10 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              KLAAR OM TE BEGINNEN?
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM TE BEGINNEN?</h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Neem vandaag nog contact op voor een gratis consultatie en ontdek
-              hoe ik je kan helpen je fitnessdoelen te bereiken.
+              Neem vandaag nog contact op voor een gratis consultatie en ontdek hoe ik je kan helpen je fitnessdoelen te
+              bereiken.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-red-500 hover:bg-red-600 text-white"
-              >
-                Boek een Gratis Consult
+              <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
+                <Link href="/contact">Boek een Gratis Consult</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-black"
+                asChild
               >
-                Bekijk Pakketten
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    window.scrollTo({ top: document.getElementById("packages")?.offsetTop || 0, behavior: "smooth" })
+                  }}
+                >
+                  Bekijk Pakketten
+                </Link>
               </Button>
             </div>
           </div>
@@ -364,5 +346,6 @@ export default function PersonalTrainingPage() {
 
       <Footer />
     </div>
-  );
+  )
 }
+

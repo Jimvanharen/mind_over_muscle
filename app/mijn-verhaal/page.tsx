@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Instagram, Mail, MapPin, Phone } from "lucide-react"
+import { Instagram, Mail, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
-export default function ContactPage() {
+export default function MijnVerhaalPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -31,13 +31,10 @@ export default function ContactPage() {
             >
               Diensten
             </Link>
-            <Link
-              href="/mijn-verhaal"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
+            <Link href="/mijn-verhaal" className="text-sm font-medium uppercase tracking-wide text-red-500 transition">
               Mijn Verhaal
             </Link>
-            <Link href="/contact" className="text-sm font-medium uppercase tracking-wide text-red-500 transition">
+            <Link href="/contact" className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition">
               Contact
             </Link>
           </nav>
@@ -76,8 +73,8 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-black/60 z-10"></div>
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_e7faa904.jpg-E2td6OHPx7HgrQG73Wdhfw9Wlm3ALH.jpeg"
-            alt="Contact"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
+            alt="Mijn Verhaal"
             fill
             className="object-cover"
             priority
@@ -86,118 +83,117 @@ export default function ContactPage() {
         <div className="container relative z-30 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              <span className="text-red-500">CONTACT</span> OPNEMEN
+              Van vastzitten in mezelf naar een <span className="text-red-500">coverwedstrijd voor Men's Health</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-8">
-              Heb je vragen of ben je klaar om je fitnessreis te beginnen? Neem vandaag nog contact op.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Story Section */}
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-04-06%20om%2020.31.09_20611bad.jpg-WpSRNC0vEgAOyCOaU4vQWzCkzWt48P.jpeg"
+                alt="Coach Vincent"
+                width={600}
+                height={600}
+                className="w-full h-auto rounded-lg"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500 rounded-lg hidden md:block"></div>
+            </div>
+
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">LATEN WE PRATEN</h2>
-              <div className="w-20 h-1 bg-red-500 mb-8"></div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Mijn Persoonlijke Reis</h2>
+              <div className="w-20 h-1 bg-red-500 mb-6"></div>
+              <p className="text-white/70 mb-6">
+                Mijn reis begon in een donkere periode. Ik worstelde met een burn-out en had 30 kg overgewicht. Ik
+                voelde me gevangen in mijn eigen lichaam en geest, zonder duidelijke uitweg.
+              </p>
+              <p className="text-white/70 mb-6">
+                De ommekeer kwam toen ik besloot om krachttraining en voeding serieus te nemen. Niet als een tijdelijke
+                oplossing, maar als een fundamentele verandering in mijn leven. Ik leerde dat echte transformatie begint
+                in de geest - vandaar de naam Mind Over Muscle.
+              </p>
+              <p className="text-white/70 mb-6">
+                Stap voor stap veranderde niet alleen mijn lichaam, maar ook mijn mindset. Ik verloor 30 kg, overwon
+                mijn burn-out, en bereikte uiteindelijk iets wat ik nooit voor mogelijk had gehouden: ik werd finalist
+                in de Men's Health-coverwedstrijd.
+              </p>
+              <p className="text-white/70 mb-8">
+                Deze ervaring inspireerde me om Mind Over Muscle op te richten. Ik wil anderen helpen om dezelfde
+                transformatie te ervaren - niet alleen fysiek, maar ook mentaal. Want als ik het kan, kun jij het ook.
+              </p>
+              <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
+                <Link href="/contact">Begin jouw transformatie</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="space-y-8 mb-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center shrink-0">
-                    <MapPin className="h-6 w-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Locatie</h3>
-                    <p className="text-white/70">Utrecht, Nederland</p>
-                  </div>
-                </div>
+      {/* Philosophy Section */}
+      <section className="py-24 bg-black">
+        <div className="container px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">MIJN FILOSOFIE</h2>
+            <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+            <p className="text-white/70">
+              Bij Mind Over Muscle geloof ik in een holistische aanpak die verder gaat dan alleen trainen en diëten.
+            </p>
+          </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center shrink-0">
-                    <Mail className="h-6 w-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">E-mail</h3>
-                    <p className="text-white/70">info@mindovermuscle.nl</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center shrink-0">
-                    <Phone className="h-6 w-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Telefoon</h3>
-                    <p className="text-white/70">0610054053</p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-4">Volg Ons</h3>
-                <div className="flex gap-4">
-                  <Link
-                    href="https://instagram.com/mindovermuscle"
-                    className="w-12 h-12 bg-zinc-900 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </Link>
-                </div>
-              </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
+              <h3 className="text-xl font-bold mb-4">Mindset Eerst</h3>
+              <p className="text-white/70">
+                Echte transformatie begint in je hoofd. Ik help je om mentale barrières te doorbreken en een positieve
+                relatie met voeding en beweging op te bouwen.
+              </p>
             </div>
 
-            <div className="bg-black p-8 rounded-lg border border-white/10">
-              <h3 className="text-xl font-bold mb-6">Boek een gratis kennismaking</h3>
-              <form className="space-y-6" id="contact-form">
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Naam
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      E-mail
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Telefoonnummer
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Bericht
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={6}
-                    className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  ></textarea>
-                </div>
-                <Button type="submit" className="w-full bg-red-500 hover:bg-red-600 text-white">
-                  Verstuur Bericht
-                </Button>
-              </form>
+            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
+              <h3 className="text-xl font-bold mb-4">Wetenschappelijke Aanpak</h3>
+              <p className="text-white/70">
+                Mijn methodes zijn gebaseerd op bewezen wetenschappelijke principes, niet op hypes of quick fixes. Ik
+                leer je wat echt werkt voor duurzame resultaten.
+              </p>
             </div>
+
+            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
+              <h3 className="text-xl font-bold mb-4">Persoonlijke Groei</h3>
+              <p className="text-white/70">
+                Fitness is meer dan alleen een fysieke transformatie. Het gaat om het ontwikkelen van discipline,
+                zelfvertrouwen en een gezonde levensstijl die je voor altijd kunt volhouden.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-zinc-950 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay z-20"></div>
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_25f26a23.jpg-0WGU4z9RqHnarXJoCQCZNqtAtkYlnh.jpeg"
+            alt="Achtergrond"
+            fill
+            className="object-cover grayscale"
+          />
+        </div>
+        <div className="container relative z-10 px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM JOUW VERHAAL TE SCHRIJVEN?</h2>
+            <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
+              Laat me je helpen om jouw eigen transformatieverhaal te beginnen. Samen kunnen we je doelen bereiken en je
+              leven veranderen.
+            </p>
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
+              <Link href="/contact">Boek een gratis kennismaking</Link>
+            </Button>
           </div>
         </div>
       </section>
