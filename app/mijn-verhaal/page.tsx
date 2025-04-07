@@ -43,7 +43,7 @@ export default function MijnVerhaalPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-04-06%20om%2020.31.09_20611bad.jpg-WpSRNC0vEgAOyCOaU4vQWzCkzWt48P.jpeg"
+                src="./about.jpg"
                 alt="Coach Vincent"
                 width={600}
                 height={600}
