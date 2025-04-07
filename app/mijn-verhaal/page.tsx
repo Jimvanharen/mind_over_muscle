@@ -43,11 +43,11 @@ export default function MijnVerhaalPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
               <Image
-                src="./about.jpg"
+                src="/about.jpg"
                 alt="Coach Vincent"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-lg object-cover"
+                className="w-full h-auto rounded-lg object-scale-down"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500 rounded-lg hidden md:block"></div>
             </div>
