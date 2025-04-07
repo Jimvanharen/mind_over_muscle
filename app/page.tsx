@@ -1,110 +1,49 @@
-import Image from "next/image"
-import Link from "next/link"
-import { CheckCircle, Instagram, Mail, Phone } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { CheckCircle, Instagram } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
-        <div className="container flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
-              alt="Mind Over Muscle"
-              width={40}
-              height={40}
-              className="h-10 w-10"
-            />
-            <span className="text-xl font-bold">MIND OVER MUSCLE</span>
-          </Link>
-
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition">
-              Home
-            </Link>
-            <Link
-              href="/diensten"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Diensten
-            </Link>
-            <Link
-              href="/mijn-verhaal"
-              className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition"
-            >
-              Mijn Verhaal
-            </Link>
-            <Link href="/contact" className="text-sm font-medium uppercase tracking-wide hover:text-red-500 transition">
-              Contact
-            </Link>
-          </nav>
-
-          <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-4 text-sm">
-              <Link href="tel:0610054053" className="flex items-center gap-1 hover:text-red-500 transition">
-                <Phone className="h-4 w-4" />
-                <span>0610054053</span>
-              </Link>
-              <Link
-                href="mailto:info@mindovermuscle.nl"
-                className="flex items-center gap-1 hover:text-red-500 transition"
-              >
-                <Mail className="h-4 w-4" />
-                <span>info@mindovermuscle.nl</span>
-              </Link>
-              <Link href="https://instagram.com/mindovermuscle" className="hover:text-red-500 transition">
-                <Instagram className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="sm" className="text-white" asChild>
-              <Link href="/contact">Contact</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10"></div>
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.36_c329071d.jpg-KzQjIwDcmuZmIzcSY30wdZ07qltZP4.jpeg"
-            alt="Personal Training"
-            fill
-            className="object-cover"
-            priority
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-image-new.jpg-Yx3Yd9Ij9Yd9Ij9Yd9Ij9Yd9Ij9Yd9Ij"
+              alt="Personal Training"
+              fill
+              className="object-cover grayscale"
+              priority
+            />
+          </div>
         </div>
         <div className="container relative z-30 px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Mindset eerst, lichaam volgt; <span className="text-red-500">transformeer je leven</span>
-              </h1>
-              <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-                Geen quick fixes, maar blijvende resultaten — met een coach die jou leert hoe je zélf de regie pakt over
-                je doelen, lichaam én je leven.
-              </p>
-              <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
-                <Link href="/contact">Plan een gratis consult</Link>
-              </Button>
-            </div>
-            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-04-06%20om%2020.31.09_20611bad.jpg-WpSRNC0vEgAOyCOaU4vQWzCkzWt48P.jpeg"
-                alt="Mind Over Muscle Team"
-                fill
-                className="object-contain bg-black"
-              />
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              Mindset eerst, lichaam volgt;{" "}
+              <span className="text-red-500">transformeer je leven</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
+              Geen quick fixes, maar blijvende resultaten — met een coach die
+              jou leert hoe je zélf de regie pakt over je doelen, lichaam én je
+              leven.
+            </p>
+            <Button
+              size="lg"
+              className="bg-red-500 hover:bg-red-600 text-white"
+              asChild
+            >
+              <Link href="/contact">Plan een gratis consult</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -113,11 +52,13 @@ export default function Home() {
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">TRANSFORMATIES</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              TRANSFORMATIES
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-3xl">
-              Geen trucjes. Geen shortcuts. Alleen échte mensen die met de juiste begeleiding en mindset hun doelen
-              hebben bereikt.
+              Geen trucjes. Geen shortcuts. Alleen échte mensen die met de
+              juiste begeleiding en mindset hun doelen hebben bereikt.
             </p>
           </div>
 
@@ -135,8 +76,12 @@ export default function Home() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Jules | 18 Weken Transformatie</h3>
-                <p className="text-white/70 mb-4">Doel: Droogtrainen voor een fotoshoot</p>
+                <h3 className="text-2xl font-bold mb-2">
+                  Jules | 18 Weken Transformatie
+                </h3>
+                <p className="text-white/70 mb-4">
+                  Doel: Droogtrainen voor een fotoshoot
+                </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="font-bold">Resultaten:</span>
@@ -157,8 +102,9 @@ export default function Home() {
                   </ul>
                 </div>
                 <p className="text-white/80 mb-6 italic">
-                  "Ik had nooit gedacht dat ik in 18 weken zo'n transformatie kon bereiken. De online coaching gaf me
-                  inzicht én de vrijheid om zelf de regie te pakken."
+                  "Ik had nooit gedacht dat ik in 18 weken zo'n transformatie
+                  kon bereiken. De online coaching gaf me inzicht én de vrijheid
+                  om zelf de regie te pakken."
                 </p>
               </div>
             </div>
@@ -176,8 +122,12 @@ export default function Home() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Gerbert | 24 Weken Transformatie</h3>
-                <p className="text-white/70 mb-4">Doel: Afvallen, balans vinden in voeding & beweging</p>
+                <h3 className="text-2xl font-bold mb-2">
+                  Gerbert | 24 Weken Transformatie
+                </h3>
+                <p className="text-white/70 mb-4">
+                  Doel: Afvallen, balans vinden in voeding & beweging
+                </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="font-bold">Resultaten:</span>
@@ -198,7 +148,8 @@ export default function Home() {
                   </ul>
                 </div>
                 <p className="text-white/80 mb-6 italic">
-                  "Ik leerde volhouden, ondanks angst en tegenslag. Geen crashdieet, maar een aanpak die echt werkt."
+                  "Ik leerde volhouden, ondanks angst en tegenslag. Geen
+                  crashdieet, maar een aanpak die echt werkt."
                 </p>
               </div>
             </div>
@@ -216,10 +167,13 @@ export default function Home() {
       <section className="py-24 bg-black">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">WAT KLANTEN ZEGGEN</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              WAT KLANTEN ZEGGEN
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-2xl">
-              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met Mind Over Muscle.
+              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met
+              Mind Over Muscle.
             </p>
           </div>
 
@@ -238,12 +192,16 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold">Emma Jansen</h4>
-                    <p className="text-white/70 text-sm">Online Coaching Programma</p>
+                    <p className="text-white/70 text-sm">
+                      Online Coaching Programma
+                    </p>
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "De persoonlijke aandacht en expertise hebben echt het verschil gemaakt in mijn fitnessreis. Ik heb
-                  niet alleen mijn lichaam getransformeerd, maar ook mijn relatie met voeding en beweging."
+                  "De persoonlijke aandacht en expertise hebben echt het
+                  verschil gemaakt in mijn fitnessreis. Ik heb niet alleen mijn
+                  lichaam getransformeerd, maar ook mijn relatie met voeding en
+                  beweging."
                 </p>
               </div>
             </div>
@@ -266,8 +224,10 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Als iemand die altijd heeft geworsteld met fitness, was de begeleiding precies wat ik nodig had. De
-                  aanpak is wetenschappelijk onderbouwd maar ook praktisch en haalbaar voor het dagelijks leven."
+                  "Als iemand die altijd heeft geworsteld met fitness, was de
+                  begeleiding precies wat ik nodig had. De aanpak is
+                  wetenschappelijk onderbouwd maar ook praktisch en haalbaar
+                  voor het dagelijks leven."
                 </p>
               </div>
             </div>
@@ -290,9 +250,10 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "De 'mind over muscle' filosofie heeft me geleerd dat fitness meer is dan alleen fysieke training. De
-                  mentale coaching en ondersteuning hebben me geholpen om barrières te doorbreken die ik nooit had
-                  gedacht te kunnen overwinnen."
+                  "De 'mind over muscle' filosofie heeft me geleerd dat fitness
+                  meer is dan alleen fysieke training. De mentale coaching en
+                  ondersteuning hebben me geholpen om barrières te doorbreken
+                  die ik nooit had gedacht te kunnen overwinnen."
                 </p>
               </div>
             </div>
@@ -313,13 +274,20 @@ export default function Home() {
         </div>
         <div className="container relative z-10 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM TE TRANSFORMEREN?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              KLAAR OM TE TRANSFORMEREN?
+            </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Zet de eerste stap naar een sterker, gezonder leven. Boek vandaag nog een consult en ontdek hoe Mind Over
-              Muscle je kan helpen je fitnessdoelen te bereiken.
+              Zet de eerste stap naar een sterker, gezonder leven. Boek vandaag
+              nog een consult en ontdek hoe Mind Over Muscle je kan helpen je
+              fitnessdoelen te bereiken.
             </p>
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
-              <Link href="/contact">Boek een gratis kennismaking</Link>
+            <Button
+              size="lg"
+              className="bg-red-500 hover:bg-red-600 text-white"
+              asChild
+            >
+              <Link href="/contact">Plan een gratis consult</Link>
             </Button>
           </div>
         </div>
@@ -341,7 +309,8 @@ export default function Home() {
                 <span className="text-xl font-bold">MIND OVER MUSCLE</span>
               </Link>
               <p className="text-white/70 mb-4">
-                Transformatie van lichaam en geest door deskundige coaching en begeleiding.
+                Transformatie van lichaam en geest door deskundige coaching en
+                begeleiding.
               </p>
               <div className="space-y-1 text-sm text-white/50">
                 <p>KvK: 90818369</p>
@@ -355,22 +324,34 @@ export default function Home() {
               <h3 className="text-lg font-bold mb-4">Sitemap</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/diensten" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/diensten"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Diensten
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mijn-verhaal" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/mijn-verhaal"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Mijn Verhaal
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/contact"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -381,20 +362,29 @@ export default function Home() {
               <h3 className="text-lg font-bold mb-4">Volg Ons</h3>
               <div className="flex gap-4 mb-6">
                 <Link
-                  href="https://instagram.com/mindovermuscle"
+                  href="https://instagram.com/mindovermusclenl"
                   className="w-10 h-10 bg-zinc-900 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition"
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
               </div>
               <div className="space-y-2">
-                <Link href="/algemene-voorwaarden" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/algemene-voorwaarden"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Algemene voorwaarden
                 </Link>
-                <Link href="/privacybeleid" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/privacybeleid"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Privacybeleid
                 </Link>
-                <Link href="/cookiebeleid" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/cookiebeleid"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Cookiebeleid
                 </Link>
               </div>
@@ -403,12 +393,12 @@ export default function Home() {
 
           <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm">
-              © {new Date().getFullYear()} Mind Over Muscle. Alle rechten voorbehouden.
+              © {new Date().getFullYear()} Mind Over Muscle. Alle rechten
+              voorbehouden.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-

@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu } from "lucide-react"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, Instagram, Mail, Phone } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Navbar() {
-  const pathname = usePathname()
-  const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10)
-    }
+      setScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -52,20 +52,12 @@ export function Navbar() {
             Home
           </Link>
           <Link
-            href="/personal-training"
+            href="/diensten"
             className={`text-sm font-medium uppercase tracking-wide hover:text-red-500 transition ${
-              pathname === "/personal-training" ? "text-red-500" : "text-white"
+              pathname === "/diensten" ? "text-red-500" : "text-white"
             }`}
           >
-            Personal Training
-          </Link>
-          <Link
-            href="/aangepaste-dieten"
-            className={`text-sm font-medium uppercase tracking-wide hover:text-red-500 transition ${
-              pathname === "/aangepaste-dieten" ? "text-red-500" : "text-white"
-            }`}
-          >
-            Diëten
+            Diensten
           </Link>
           <Link
             href="/transformaties"
@@ -74,6 +66,14 @@ export function Navbar() {
             }`}
           >
             Transformaties
+          </Link>
+          <Link
+            href="/mijn-verhaal"
+            className={`text-sm font-medium uppercase tracking-wide hover:text-red-500 transition ${
+              pathname === "/mijn-verhaal" ? "text-red-500" : "text-white"
+            }`}
+          >
+            Mijn Verhaal
           </Link>
           <Link
             href="/contact"
@@ -86,14 +86,30 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button
-            variant="outline"
-            className="hidden md:flex border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
-            asChild
-          >
-            <Link href="/contact">Boek een Sessie</Link>
-          </Button>
+          <div className="hidden md:flex items-center gap-4 text-sm">
+            <Link
+              href="tel:0610054053"
+              className="flex items-center gap-1 hover:text-red-500 transition"
+            >
+              <Phone className="h-4 w-4" />
+              <span>0610054053</span>
+            </Link>
+            <Link
+              href="mailto:info@mindovermuscle.nl"
+              className="flex items-center gap-1 hover:text-red-500 transition"
+            >
+              <Mail className="h-4 w-4" />
+              <span>info@mindovermuscle.nl</span>
+            </Link>
+            <Link
+              href="https://instagram.com/mindovermusclenl"
+              className="hover:text-red-500 transition"
+            >
+              <Instagram className="h-4 w-4" />
+            </Link>
+          </div>
 
+          {/* Mobile menu button */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -112,28 +128,30 @@ export function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href="/personal-training"
+                  href="/diensten"
                   className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
-                    pathname === "/personal-training" ? "text-red-500" : "text-white"
+                    pathname === "/diensten" ? "text-red-500" : "text-white"
                   }`}
                 >
-                  Personal Training
-                </Link>
-                <Link
-                  href="/aangepaste-dieten"
-                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
-                    pathname === "/aangepaste-dieten" ? "text-red-500" : "text-white"
-                  }`}
-                >
-                  Diëten
+                  Diensten
                 </Link>
                 <Link
                   href="/transformaties"
                   className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
-                    pathname === "/transformaties" ? "text-red-500" : "text-white"
+                    pathname === "/transformaties"
+                      ? "text-red-500"
+                      : "text-white"
                   }`}
                 >
                   Transformaties
+                </Link>
+                <Link
+                  href="/mijn-verhaal"
+                  className={`text-lg font-medium uppercase tracking-wide hover:text-red-500 transition ${
+                    pathname === "/mijn-verhaal" ? "text-red-500" : "text-white"
+                  }`}
+                >
+                  Mijn Verhaal
                 </Link>
                 <Link
                   href="/contact"
@@ -143,8 +161,11 @@ export function Navbar() {
                 >
                   Contact
                 </Link>
-                <Button className="bg-red-500 hover:bg-red-600 text-white mt-4" asChild>
-                  <Link href="/contact">Boek een Sessie</Link>
+                <Button
+                  className="bg-red-500 hover:bg-red-600 text-white mt-4"
+                  asChild
+                >
+                  <Link href="/contact">Boek een Gratis Kennismaking</Link>
                 </Button>
               </div>
             </SheetContent>
@@ -152,6 +173,5 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }
-
