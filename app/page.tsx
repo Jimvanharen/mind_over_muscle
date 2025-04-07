@@ -17,12 +17,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60 z-10"></div>
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
           <div className="relative w-full h-full">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-image-new.jpg-Yx3Yd9Ij9Yd9Ij9Yd9Ij9Yd9Ij9Yd9Ij"
-              alt="Personal Training"
-              fill
-              className="object-cover grayscale"
-              priority
+            <video
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/180cbcb8-4b5f-4922-820f-1a6e31e2a741-tLbxxveDxoxF9bsIA40jcEx1iNkWms.MP4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover grayscale"
             />
           </div>
         </div>

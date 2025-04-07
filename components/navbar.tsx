@@ -24,10 +24,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-white/10 bg-black/80 backdrop-blur-md"
-          : "border-transparent bg-gradient-to-b from-black/80 to-transparent"
+          ? "border-b border-white/10 bg-black/80 backdrop-blur-md"
+          : "border-none bg-transparent"
       }`}
     >
       <div className="container flex items-center justify-between py-4">
