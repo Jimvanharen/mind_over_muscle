@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Instagram } from "lucide-react";
+import Image from "next/image"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/navbar";
+import { Button } from "@/components/ui/button"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 export default function MijnVerhaalPage() {
   return (
@@ -27,10 +27,7 @@ export default function MijnVerhaalPage() {
         <div className="container relative z-30 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Van vastzitten in mezelf naar een{" "}
-              <span className="text-red-500">
-                coverwedstrijd voor Men's Health
-              </span>
+              Van vastzitten in mezelf naar een <span className="text-red-500">coverwedstrijd voor Men's Health</span>
             </h1>
           </div>
         </div>
@@ -39,100 +36,118 @@ export default function MijnVerhaalPage() {
       {/* Story Section */}
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
-              <Image
-                src="/about.jpg"
-                alt="Coach Vincent"
-                width={600}
-                height={600}
-                className="w-full h-auto rounded-lg object-scale-down"
-              />
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500 rounded-lg hidden md:block"></div>
-            </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="prose prose-lg prose-invert mx-auto">
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Jarenlang leefde ik met een glimlach die veel verborg.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Ik werkte in de specialistische GGZ, hielp dagelijks mensen vooruit — maar zelf liep ik keer op keer
+                vast.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Ik zat gevangen in destructieve patronen: emotie-eten, drugsgebruik, uitstelgedrag en constante
+                zelftwijfel.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Op mijn dieptepunt had ik een burn-out, liep mijn relatie ten einde, woog ik 20 kilo te veel en voelde
+                ik me compleet losgekoppeld van mijn lijf.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Ik was mezelf kwijt — en dat was niet de eerste keer in mijn leven.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Alsof dat nog niet genoeg was, kreeg ik te horen dat ik misschien nooit meer normaal zou kunnen trainen
+                door een opgelopen schouderblessure, vlak voor de coronaperiode.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Twee jaar lang sukkelde ik aan, maar ik gaf niet op. Ik hield vast aan hoop.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Nadat ik uiteindelijk toch een schouderoperatie had ondergaan, stond ik voor de keuze:
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Blijf ik hangen in wie ik was, of kies ik voor wie ik wil zijn?
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6 font-bold">Ik koos.</p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">Niet vanuit kracht, maar vanuit noodzaak.</p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Ik koos voor mezelf. Voor verandering. Voor herstel.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Fitness werd vanaf mijn 24e mijn grootste passie.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Maar ondanks alle inzet en toewijding liep ik jarenlang tegen dezelfde plateaus aan.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Pas vanaf mijn 30e begon ik het écht serieus aan te pakken — met wetenschappelijke onderbouwing,
+                structuur en een visie die verder ging dan alleen fysiek resultaat.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Met krachttraining, bewuste voeding en diepe zelfreflectie begon ik mezelf stap voor stap terug te
+                vinden.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Niet voor het perfecte plaatje, maar voor innerlijke rust en uiteindelijk fysieke vrijheid.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Wat begon als een poging om grip te krijgen, groeide uit tot een levensstijl.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Nog geen jaar later stond ik in de finale van de Men's Health-coverwedstrijd.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Ik won niet, maar kreeg wél een volledige pagina in dit toonaangevende fitnessblad.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Sindsdien doe ik jaarlijks fitnessshoots — niet om te laten zien wat ik heb, maar om te herinneren wat
+                ik heb overwonnen.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6 font-bold">
+                Die reis werd de basis van Mind Over Muscle.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Een coachprogramma waarin ik mijn jarenlange ervaring in fitness, voeding en de GGZ combineer met alles
+                wat ik heb geleerd over fysieke en mentale transformatie.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-12">
+                Vanaf het moment dat ik fitness ontdekte, was ik er obsessief mee bezig.
+              </p>
 
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Mijn Persoonlijke Reis
-              </h2>
-              <div className="w-20 h-1 bg-red-500 mb-6"></div>
-              <p className="text-white/70 mb-6">
-                Mijn reis begon in een donkere periode. Ik worstelde met een
-                burn-out en had 30 kg overgewicht. Ik voelde me gevangen in mijn
-                eigen lichaam en geest, zonder duidelijke uitweg.
-              </p>
-              <p className="text-white/70 mb-6">
-                De ommekeer kwam toen ik besloot om krachttraining en voeding
-                serieus te nemen. Niet als een tijdelijke oplossing, maar als
-                een fundamentele verandering in mijn leven. Ik leerde dat echte
-                transformatie begint in de geest - vandaar de naam Mind Over
-                Muscle.
-              </p>
-              <p className="text-white/70 mb-6">
-                Stap voor stap veranderde niet alleen mijn lichaam, maar ook
-                mijn mindset. Ik verloor 30 kg, overwon mijn burn-out, en
-                bereikte uiteindelijk iets wat ik nooit voor mogelijk had
-                gehouden: ik werd finalist in de Men's Health-coverwedstrijd.
-              </p>
-              <p className="text-white/70 mb-8">
-                Deze ervaring inspireerde me om Mind Over Muscle op te richten.
-                Ik wil anderen helpen om dezelfde transformatie te ervaren -
-                niet alleen fysiek, maar ook mentaal. Want als ik het kan, kun
-                jij het ook.
-              </p>
-              <Button
-                className="bg-red-500 hover:bg-red-600 text-white"
-                asChild
-              >
-                <Link href="/contact">Begin jouw transformatie</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div className="my-12">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-04-06%20om%2020.31.09_20611bad.jpg-WpSRNC0vEgAOyCOaU4vQWzCkzWt48P.jpeg"
+                  alt="Coach Vincent"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto rounded-lg object-cover"
+                />
+              </div>
 
-      {/* Philosophy Section */}
-      <section className="py-24 bg-black">
-        <div className="container px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              MIJN FILOSOFIE
-            </h2>
-            <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-            <p className="text-white/70">
-              Bij Mind Over Muscle geloof ik in een holistische aanpak die
-              verder gaat dan alleen trainen en diëten.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <h3 className="text-xl font-bold mb-4">Mindset Eerst</h3>
-              <p className="text-white/70">
-                Echte transformatie begint in je hoofd. Ik help je om mentale
-                barrières te doorbreken en een positieve relatie met voeding en
-                beweging op te bouwen.
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Door ontelbaar veel uren zelfstudie en opleidingen (binnen de fitness en GGZ) wist ik mezelf jaren later
+                te ontpoppen tot online fitnesscoach — of beter gezegd: transformatiecoach.
               </p>
-            </div>
-
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <h3 className="text-xl font-bold mb-4">
-                Wetenschappelijke Aanpak
-              </h3>
-              <p className="text-white/70">
-                Mijn methodes zijn gebaseerd op bewezen wetenschappelijke
-                principes, niet op hypes of quick fixes. Ik leer je wat echt
-                werkt voor duurzame resultaten.
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Wat in 2022 begon, is inmiddels uitgegroeid tot een volwaardig coaching bedrijf, waarin ik al meer dan
+                100 mensen heb mogen begeleiden richting hun eigen duurzame transformatie.
               </p>
-            </div>
-
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <h3 className="text-xl font-bold mb-4">Persoonlijke Groei</h3>
-              <p className="text-white/70">
-                Fitness is meer dan alleen een fysieke transformatie. Het gaat
-                om het ontwikkelen van discipline, zelfvertrouwen en een gezonde
-                levensstijl die je voor altijd kunt volhouden.
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Een programma waarin jouw verhaal en niveau centraal staan.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Waar wetenschap, empathie en community samenkomen om jou vooruit te helpen — van binnen én van buiten.
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Vandaag</h2>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">Vandaag voel ik me sterker dan ooit.</p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">
+                Niet omdat ik alles perfect doe, maar omdat ik heb geleerd mezelf te dragen — ook op de moeilijke dagen.
+              </p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">En precies dat gun ik jou ook.</p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6">Je hoeft niet te blijven wie je was.</p>
+              <p className="text-white/80 text-lg leading-relaxed mb-6 font-bold">
+                Je mag worden wie je diep vanbinnen al bent.
               </p>
             </div>
           </div>
@@ -152,130 +167,19 @@ export default function MijnVerhaalPage() {
         </div>
         <div className="container relative z-10 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              KLAAR OM JOUW VERHAAL TE SCHRIJVEN?
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM JOUW VERHAAL TE SCHRIJVEN?</h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Laat me je helpen om jouw eigen transformatieverhaal te beginnen.
-              Samen kunnen we je doelen bereiken en je leven veranderen.
+              Laat me je helpen om jouw eigen transformatieverhaal te beginnen. Samen kunnen we je doelen bereiken en je
+              leven veranderen.
             </p>
-            <Button
-              size="lg"
-              className="bg-red-500 hover:bg-red-600 text-white"
-              asChild
-            >
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
               <Link href="/contact">Boek een gratis kennismaking</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 bg-zinc-950 border-t border-white/10">
-        <div className="container px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <Link href="/" className="flex items-center gap-2 mb-6">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/openart-b95d1a4f7c4b42b9b01c9746fed6d252_raw.jpg-WwogpIoxXstSfEIppQRCxvlLDIqmXR.jpeg"
-                  alt="Mind Over Muscle"
-                  width={40}
-                  height={40}
-                  className="h-10 w-10"
-                />
-                <span className="text-xl font-bold">MIND OVER MUSCLE</span>
-              </Link>
-              <p className="text-white/70 mb-4">
-                Transformatie van lichaam en geest door deskundige coaching en
-                begeleiding.
-              </p>
-              <div className="space-y-1 text-sm text-white/50">
-                <p>KvK: 90818369</p>
-                <p>BTW-nummer: NL004844082B82</p>
-                <p>Tel: 0610054053</p>
-                <p>E-mail: info@mindovermuscle.nl</p>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4">Sitemap</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white/70 hover:text-red-500 transition"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/diensten"
-                    className="text-white/70 hover:text-red-500 transition"
-                  >
-                    Diensten
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/mijn-verhaal"
-                    className="text-white/70 hover:text-red-500 transition"
-                  >
-                    Mijn Verhaal
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-white/70 hover:text-red-500 transition"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4">Volg Ons</h3>
-              <div className="flex gap-4 mb-6">
-                <Link
-                  href="https://instagram.com/mindovermusclenl"
-                  className="w-10 h-10 bg-zinc-900 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition"
-                >
-                  <Instagram className="h-5 w-5" />
-                </Link>
-              </div>
-              <div className="space-y-2">
-                <Link
-                  href="/algemene-voorwaarden"
-                  className="block text-white/70 hover:text-red-500 transition"
-                >
-                  Algemene voorwaarden
-                </Link>
-                <Link
-                  href="/privacybeleid"
-                  className="block text-white/70 hover:text-red-500 transition"
-                >
-                  Privacybeleid
-                </Link>
-                <Link
-                  href="/cookiebeleid"
-                  className="block text-white/70 hover:text-red-500 transition"
-                >
-                  Cookiebeleid
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/50 text-sm">
-              © {new Date().getFullYear()} Mind Over Muscle. Alle rechten
-              voorbehouden.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
