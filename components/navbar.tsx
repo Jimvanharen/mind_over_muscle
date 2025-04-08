@@ -102,7 +102,7 @@ export function Navbar() {
               <span>info@mindovermuscle.nl</span>
             </Link>
             <Link
-              href="https://instagram.com/mindovermusclenl"
+              href="https://instagram.com/vinnievinc.fit"
               className="hover:text-red-500 transition"
             >
               <Instagram className="h-4 w-4" />

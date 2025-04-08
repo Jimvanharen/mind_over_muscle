@@ -25,7 +25,7 @@ export function Footer() {
               training en voedingsbegeleiding.
             </p>
             <Link
-              href="https://instagram.com/mindovermusclenl"
+              href="https://instagram.com/vinnievinc.fit"
               className="w-10 h-10 bg-zinc-900 rounded-full items-center justify-center text-white hover:bg-red-500 transition mt-4 inline-block"
             >
               <Instagram className="h-5 w-5" />

@@ -84,7 +84,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold mb-4">Volg Ons</h3>
                 <div className="flex gap-4">
                   <Link
-                    href="https://instagram.com/mindovermusclenl"
+                    href="https://instagram.com/vinnievinc.fit"
                     className="w-12 h-12 bg-zinc-900 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition"
                   >
                     <Instagram className="h-5 w-5" />
