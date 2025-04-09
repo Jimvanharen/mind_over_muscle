@@ -363,7 +363,7 @@ export default function Home() {
               <h3 className="text-lg font-bold mb-4">Volg Ons</h3>
               <div className="flex gap-4 mb-6">
                 <Link
-                  href="https://instagram.com/mindovermusclenl"
+                  href="https://instagram.com/vinnievinc.fit"
                   className="w-10 h-10 bg-zinc-900 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition"
                 >
                   <Instagram className="h-5 w-5" />
