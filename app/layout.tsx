@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   title: "Mind Over Muscle | Personal Training in Nederland",
   description:
     "Expert personal training, aangepaste diëten en fitness merchandise om je lichaam en geest te transformeren.",
-  generator: "v0.dev",
+    icons: {
+      icon: "/weblogo.jpg",
+    },
 };
 
 export default function RootLayout({
