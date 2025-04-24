@@ -117,11 +117,11 @@ export default function MijnVerhaalPage() {
 
               <div className="my-12">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-04-06%20om%2020.31.09_20611bad.jpg-WpSRNC0vEgAOyCOaU4vQWzCkzWt48P.jpeg"
+                  src="/vincentverhaal.png"
                   alt="Coach Vincent"
-                  width={800}
-                  height={500}
-                  className="w-full h-auto rounded-lg object-cover"
+                  width={350}
+                  height={350}
+                  className="rounded-lg object-cover"
                 />
               </div>
 
