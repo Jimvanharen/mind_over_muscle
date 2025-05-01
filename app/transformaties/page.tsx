@@ -96,7 +96,7 @@ export default function TransformatiesPage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_15ed0a3b.jpg-7x56c217ezi57FjFM6JrqHQcMOCO4e.jpeg"
+                  src="/vincent_gerbert.jpeg"
                   alt="Gerbert Transformatie"
                   width={600}
                   height={600}
@@ -126,7 +126,15 @@ export default function TransformatiesPage() {
                   </ul>
                 </div>
                 <p className="text-white/80 mb-6 italic">
-                  "Ik leerde volhouden, ondanks angst en tegenslag. Geen crashdieet, maar een aanpak die echt werkt."
+                  ‘’Na blessures en terugvallen dacht ik: gaat dit me écht
+                  lukken? Maar dankzij de steun van Vincent als coach en de
+                  MoM-community vond ik mijn eigen weg. Geen crashdieet, maar
+                  juist een programma dat me inzicht gaf in hoeveel er eigenlijk
+                  wél mogelijk was. Ik leerde volhouden, ondanks angst en
+                  tegenslag. Het resultaat? Meer energie, meer zelfvertrouwen,
+                  en 24 kilo lichter. Inmiddels ben ik al 7 maanden
+                  uitgestroomd, houd ik mijn gewicht stabiel en voel ik me
+                  fitter dan ooit.’’
                 </p>
               </div>
             </div>

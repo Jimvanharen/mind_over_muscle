@@ -121,7 +121,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_15ed0a3b.jpg-7x56c217ezi57FjFM6JrqHQcMOCO4e.jpeg"
+                  src="/vincent_gerbert.jpeg"
                   alt="Gerbert Transformatie"
                   width={600}
                   height={600}
