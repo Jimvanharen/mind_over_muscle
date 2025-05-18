@@ -4,7 +4,12 @@ import { CheckCircle, Instagram } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -116,7 +121,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_15ed0a3b.jpg-7x56c217ezi57FjFM6JrqHQcMOCO4e.jpeg"
+                  src="/vincent_gerbert.jpeg"
                   alt="Gerbert Transformatie"
                   width={600}
                   height={600}
@@ -150,8 +155,15 @@ export default function Home() {
                   </ul>
                 </div>
                 <p className="text-white/80 mb-6 italic">
-                  "Ik leerde volhouden, ondanks angst en tegenslag. Geen
-                  crashdieet, maar een aanpak die echt werkt."
+                  ‘’Na blessures en terugvallen dacht ik: gaat dit me écht
+                  lukken? Maar dankzij de steun van Vincent als coach en de
+                  MoM-community vond ik mijn eigen weg. Geen crashdieet, maar
+                  juist een programma dat me inzicht gaf in hoeveel er eigenlijk
+                  wél mogelijk was. Ik leerde volhouden, ondanks angst en
+                  tegenslag. Het resultaat? Meer energie, meer zelfvertrouwen,
+                  en 24 kilo lichter. Inmiddels ben ik al 7 maanden
+                  uitgestroomd, houd ik mijn gewicht stabiel en voel ik me
+                  fitter dan ooit.’’
                 </p>
               </div>
             </div>
@@ -298,34 +310,45 @@ export default function Home() {
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">VEELGESTELDE VRAGEN</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              VEELGESTELDE VRAGEN
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-2xl">
-              Antwoorden op de meest gestelde vragen over het Mind Over Muscle programma.
+              Antwoorden op de meest gestelde vragen over het Mind Over Muscle
+              programma.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-1"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
                   <h3 className="text-lg font-semibold text-left">
-                    Hoe lang duurt het voordat ik mijn doelen bereik in het MoM-programma?
+                    Hoe lang duurt het voordat ik mijn doelen bereik in het
+                    MoM-programma?
                   </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Gemiddeld hebben mensen 6 maanden nodig om hun doel te behalen, afhankelijk van het startpunt. We
-                    streven naar een gewichtsverlies van 0,4% tot 1% lichaamsgewicht per week.
+                    Gemiddeld hebben mensen 6 maanden nodig om hun doel te
+                    behalen, afhankelijk van het startpunt. We streven naar een
+                    gewichtsverlies van 0,4% tot 1% lichaamsgewicht per week.
                     <br />
                     <br />
-                    Voor een succesvolle groeifase (ook wel 'bulken' genoemd), rekenen we op een periode van minimaal 6
-                    tot 9 maanden.
+                    Voor een succesvolle groeifase (ook wel 'bulken' genoemd),
+                    rekenen we op een periode van minimaal 6 tot 9 maanden.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-2"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
                   <h3 className="text-lg font-semibold text-left">
                     Hoe lang duurt het voordat ik kan starten met het programma?
@@ -333,156 +356,231 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Iedere maandag starten nieuwe deelnemers. Na je aanmelding plannen we een intake in. Afhankelijk van
-                    de aanmeldingen stemmen we samen de startdatum af.
+                    Iedere maandag starten nieuwe deelnemers. Na je aanmelding
+                    plannen we een intake in. Afhankelijk van de aanmeldingen
+                    stemmen we samen de startdatum af.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Krijg ik een voedingsschema?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Ja. Je ontvangt een op maat gemaakt voedingsschema met lekkere en makkelijk te bereiden recepten.
-                    Dit schema helpt je om zelfstandig te leren tracken. Je krijgt daarnaast een uitgebreide handleiding
-                    met uitleg over het zelfstandig monitoren van je voeding. Het schema bevat 7 unieke dagen en wordt
-                    volledig afgestemd op jouw voorkeuren via het intakeformulier.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Maakt het uit bij welke sportschool ik train?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Nee, we passen het programma aan op jouw situatie. De voorkeur gaat uit naar een reguliere gym met
-                    voldoende trainingsmateriaal. In sommige gevallen kan een goed uitgeruste home-gym ook voldoende
-                    zijn.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Hoe vaak per week moet ik trainen?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Je kunt al geweldige resultaten behalen met 2 tot 4 high-impact workouts per week van 90 - 120
-                    minuten. We stemmen jouw trainingsfrequentie af op jouw ervaring, agenda en doelstelling.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-6" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Kan ik dit combineren met mijn andere sport(en)?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Zeker! Veel deelnemers combineren krachttraining met bijvoorbeeld voetbal, crossfit of yoga.
-                    Belangrijk is dat je naast andere activiteiten minimaal 2 gerichte MoM-workouts per week doet.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-7" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Hoe verloopt de communicatie?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Alles gebeurt overzichtelijk via een gedeelde Google Sheet waarin jij jouw progressie bijhoudt.
-                    Wekelijks ontvang je persoonlijke videofeedback. Voor dringende vragen kun je altijd WhatsAppen.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-8" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Zijn er fysieke contactmomenten?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Ja, indien gewenst. Na instroom adviseren we vaak een techniekles in week 2 om aan specifieke
-                    oefeningen te werken. Bij deelnemers in de buurt zijn extra contactmomenten bespreekbaar.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-9" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-3"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
                   <h3 className="text-lg font-semibold text-left">
-                    Hoe zit het met etentjes buiten de deur en sociale gelegenheden?
+                    Krijg ik een voedingsschema?
                   </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Het MoM-programma is ontworpen voor een realistisch leven. We geven praktische tips om progressie te
-                    boeken, óók als je uit eten gaat of feestjes hebt.
+                    Ja. Je ontvangt een op maat gemaakt voedingsschema met
+                    lekkere en makkelijk te bereiden recepten. Dit schema helpt
+                    je om zelfstandig te leren tracken. Je krijgt daarnaast een
+                    uitgebreide handleiding met uitleg over het zelfstandig
+                    monitoren van je voeding. Het schema bevat 7 unieke dagen en
+                    wordt volledig afgestemd op jouw voorkeuren via het
+                    intakeformulier.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-10" className="bg-black rounded-lg border border-white/10 overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Werkt het ook als ik met een partner/gezin eet?</h3>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
-                  <p>
-                    Absoluut. Veel deelnemers eten dagelijks met hun partner of gezin. Je leert hoe je daarin slimme
-                    keuzes maakt zonder in te leveren op resultaat.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-11" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-4"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
                   <h3 className="text-lg font-semibold text-left">
-                    Ik heb het erg druk, kan ik beter wachten tot het rustiger is?
+                    Maakt het uit bij welke sportschool ik train?
                   </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Juist niet. Als je leert hoe je resultaat behaalt in drukke periodes, kun je het ook vasthouden op
-                    lange termijn.
+                    Nee, we passen het programma aan op jouw situatie. De
+                    voorkeur gaat uit naar een reguliere gym met voldoende
+                    trainingsmateriaal. In sommige gevallen kan een goed
+                    uitgeruste home-gym ook voldoende zijn.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-12" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-5"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
                   <h3 className="text-lg font-semibold text-left">
-                    Ik heb voedselintoleranties of dieetwensen, zoals veganistische voeding. Is dat een probleem?
+                    Hoe vaak per week moet ik trainen?
                   </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Nee, we houden volledig rekening met jouw voorkeuren, intoleranties en leefstijl. Jouw plan wordt
-                    100% op maat gemaakt, zonder concessies aan resultaat.
+                    Je kunt al geweldige resultaten behalen met 2 tot 4
+                    high-impact workouts per week van 90 - 120 minuten. We
+                    stemmen jouw trainingsfrequentie af op jouw ervaring, agenda
+                    en doelstelling.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-13" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-6"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Voor wie is het MoM-programma geschikt?</h3>
+                  <h3 className="text-lg font-semibold text-left">
+                    Kan ik dit combineren met mijn andere sport(en)?
+                  </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
-                    Voor gemotiveerde mannen en vrouwen van elk niveau – van beginner tot gevorderde. Belangrijk is dat
-                    je bereid bent om te investeren in jezelf, open communiceert en je aan de afspraken houdt.
+                    Zeker! Veel deelnemers combineren krachttraining met
+                    bijvoorbeeld voetbal, crossfit of yoga. Belangrijk is dat je
+                    naast andere activiteiten minimaal 2 gerichte MoM-workouts
+                    per week doet.
                   </p>
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-14" className="bg-black rounded-lg border border-white/10 overflow-hidden">
+              <AccordionItem
+                value="item-7"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
-                  <h3 className="text-lg font-semibold text-left">Wat verwachten we van jou?</h3>
+                  <h3 className="text-lg font-semibold text-left">
+                    Hoe verloopt de communicatie?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Alles gebeurt overzichtelijk via een gedeelde Google Sheet
+                    waarin jij jouw progressie bijhoudt. Wekelijks ontvang je
+                    persoonlijke videofeedback. Voor dringende vragen kun je
+                    altijd WhatsAppen.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-8"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Zijn er fysieke contactmomenten?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Ja, indien gewenst. Na instroom adviseren we vaak een
+                    techniekles in week 2 om aan specifieke oefeningen te
+                    werken. Bij deelnemers in de buurt zijn extra
+                    contactmomenten bespreekbaar.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-9"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Hoe zit het met etentjes buiten de deur en sociale
+                    gelegenheden?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Het MoM-programma is ontworpen voor een realistisch leven.
+                    We geven praktische tips om progressie te boeken, óók als je
+                    uit eten gaat of feestjes hebt.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-10"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Werkt het ook als ik met een partner/gezin eet?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Absoluut. Veel deelnemers eten dagelijks met hun partner of
+                    gezin. Je leert hoe je daarin slimme keuzes maakt zonder in
+                    te leveren op resultaat.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-11"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Ik heb het erg druk, kan ik beter wachten tot het rustiger
+                    is?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Juist niet. Als je leert hoe je resultaat behaalt in drukke
+                    periodes, kun je het ook vasthouden op lange termijn.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-12"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Ik heb voedselintoleranties of dieetwensen, zoals
+                    veganistische voeding. Is dat een probleem?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Nee, we houden volledig rekening met jouw voorkeuren,
+                    intoleranties en leefstijl. Jouw plan wordt 100% op maat
+                    gemaakt, zonder concessies aan resultaat.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-13"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Voor wie is het MoM-programma geschikt?
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
+                  <p>
+                    Voor gemotiveerde mannen en vrouwen van elk niveau – van
+                    beginner tot gevorderde. Belangrijk is dat je bereid bent om
+                    te investeren in jezelf, open communiceert en je aan de
+                    afspraken houdt.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-14"
+                className="bg-black rounded-lg border border-white/10 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-zinc-950/50">
+                  <h3 className="text-lg font-semibold text-left">
+                    Wat verwachten we van jou?
+                  </h3>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 pt-2 text-white/70">
                   <p>
