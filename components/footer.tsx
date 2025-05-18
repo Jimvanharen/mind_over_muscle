@@ -106,10 +106,10 @@ export function Footer() {
               Privacybeleid
             </Link>
             <Link
-              href="/terms-of-service"
+              href="/algemene-voowaarden"
               className="text-white/50 text-sm hover:text-red-500 transition"
             >
-              Servicevoorwaarden
+              Algemene voorwaarden
             </Link>
           </div>
         </div>
