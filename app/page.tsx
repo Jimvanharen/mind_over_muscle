@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
           <div className="relative w-full h-full">
             <video
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/180cbcb8-4b5f-4922-820f-1a6e31e2a741-tLbxxveDxoxF9bsIA40jcEx1iNkWms.MP4"
+              src="/intro.mp4"
               autoPlay
               loop
               muted
