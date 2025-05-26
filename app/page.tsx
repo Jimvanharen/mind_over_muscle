@@ -10,6 +10,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { PopupButton } from "react-calendly";
+import { CalendlyPopup } from "@/components/calendly/popup";
 
 export default function Home() {
   return (
@@ -44,13 +46,8 @@ export default function Home() {
               jou leert hoe je zélf de regie pakt over je doelen, lichaam én je
               leven.
             </p>
-            <Button
-              size="lg"
-              className="bg-red-500 hover:bg-red-600 text-white"
-              asChild
-            >
-              <Link href="/contact">Plan een gratis consult</Link>
-            </Button>
+
+            <CalendlyPopup />
           </div>
         </div>
       </section>
