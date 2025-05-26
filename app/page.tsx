@@ -10,8 +10,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { PopupButton } from "react-calendly";
+import { InlineWidget, PopupButton } from "react-calendly";
 import { CalendlyPopup } from "@/components/calendly/popup";
+import { InlineCalendly } from "@/components/calendly/inline";
+import { CalendlyDialog } from "@/components/dialog/calendly";
 
 export default function Home() {
   return (
@@ -47,7 +49,7 @@ export default function Home() {
               leven.
             </p>
 
-            <CalendlyPopup />
+            <CalendlyDialog />
           </div>
         </div>
       </section>
