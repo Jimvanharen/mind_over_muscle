@@ -15,7 +15,7 @@ export const CalendlyDialog = () => {
       <DialogTrigger>
         <Button>Plan een gratis consult</Button>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl w-full">
+      <DialogContent className="sm:max-w-4xl sm:w-full">
         <DialogHeader>
           <DialogTitle>Gesprek bij vincent inplannen</DialogTitle>
           <DialogDescription>
