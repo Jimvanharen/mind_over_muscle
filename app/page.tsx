@@ -22,22 +22,45 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden min-h-[80vh]">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10"></div>
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
-          <div className="relative w-full h-full">
-            <video
-              src="/intro.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover grayscale"
-            />
+
+          {/* Diagonal overlapping image boxes */}
+          <div className="absolute inset-0">
+            {/* First image box - top left */}
+            <div className="absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
+              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_e7faa904.jpg-E2td6OHPx7HgrQG73Wdhfw9Wlm3ALH.jpeg"
+                  alt="Man with male client"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Second image box - bottom right */}
+            <div className="absolute bottom-16 right-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-40">
+              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
+                  alt="Man with female client"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Background gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/80 z-20"></div>
           </div>
         </div>
-        <div className="container relative z-30 px-4">
+
+        <div className="container relative z-50 px-4 flex items-center min-h-[60vh]">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               Mindset eerst, lichaam volgt;{" "}
@@ -48,8 +71,13 @@ export default function Home() {
               jou leert hoe je zélf de regie pakt over je doelen, lichaam én je
               leven.
             </p>
-
-            <CalendlyDialog />
+            <Button
+              size="lg"
+              className="bg-red-500 hover:bg-red-600 text-white"
+              asChild
+            >
+              <Link href="/contact">Plan een gratis consult</Link>
+            </Button>
           </div>
         </div>
       </section>
