@@ -86,7 +86,9 @@ export default function Home() {
                   Jules | 18 Weken Transformatie
                 </h3>
                 <p className="text-white/70 mb-4">
-                  Doel: Droogtrainen voor een fotoshoot
+                  Doel: Droogtrainen voor een fotoshoot! In slechts 18 weken
+                  verloor Jules maar liefst 14,8 kg, -13 cm buikomtrek, en -9 cm
+                  heupomtrek en was hij ready voor de SHOOT van zijn leven!🔥
                 </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">
@@ -109,8 +111,10 @@ export default function Home() {
                 </div>
                 <p className="text-white/80 mb-6 italic">
                   "Ik had nooit gedacht dat ik in 18 weken zo'n transformatie
-                  kon bereiken. De online coaching gaf me inzicht én de vrijheid
-                  om zelf de regie te pakken."
+                  kon bereiken. De combinatie van online coaching waarin ik veel
+                  eigen regie had en een coach die online beschikbaar is heeft
+                  echt het verschil gemaakt. Ik voel me sterker, energieker en
+                  zelfverzekerder dan ooit.’’
                 </p>
               </div>
             </div>
@@ -132,7 +136,10 @@ export default function Home() {
                   Gerbert | 24 Weken Transformatie
                 </h3>
                 <p className="text-white/70 mb-4">
-                  Doel: Afvallen, balans vinden in voeding & beweging
+                  Doel: Afvallen, balans vinden in een gezonde relatie met
+                  voeding & beweging. In slechts 24 weken verloor Gerbert 24kg,
+                  -25,5 cm in buikomvang, en 1-4,5 cm in heupomvang! Dit heeft
+                  hij afgesloten met een prachtige leefstijl shoot!
                 </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">

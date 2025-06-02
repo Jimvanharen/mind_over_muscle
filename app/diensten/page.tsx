@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { CheckCircle } from "lucide-react"
-import { Instagram } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { CheckCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
 
 export default function DienstenPage() {
   return (
@@ -31,7 +31,10 @@ export default function DienstenPage() {
               MIJN <span className="text-red-500">DIENSTEN</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8">
-              Ontdek hoe Mind Over Muscle jou kan helpen je doelen te bereiken met een persoonlijke aanpak.
+              Persoonlijke één-op-één online coaching die zich volledig aanpast
+              aan jouw niveau, doelen en leefstijl — zodat jij duurzaam
+              resultaat behaalt, stap voor stap. En je doet het niet alleen! We
+              doen dit samen met één community!
             </p>
           </div>
         </div>
@@ -54,41 +57,81 @@ export default function DienstenPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Online Coaching (MoM Programma)</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Online Coaching (MoM Programma)
+              </h2>
               <div className="w-20 h-1 bg-red-500 mb-6"></div>
               <p className="text-white/70 mb-8">
-                Een compleet online transformatieprogramma waarin training, voeding, mindset en leefstijl samenkomen.
-                Dit programma helpt je niet alleen fysiek, maar ook mentaal te groeien met een community die je draagt.
+                Een compleet online transformatieprogramma waarin training,
+                voeding, mindset en leefstijl samenkomen. Dit programma helpt je
+                niet alleen fysiek, maar ook mentaal te groeien met een
+                community die je draagt.
               </p>
 
               <h3 className="text-xl font-bold mb-4">Wat krijg je?</h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Persoonlijke coaching – volledig aangepast aan jouw niveau en doelen.</span>
+                  <span>
+                    Gepersonaliseerde Aanpak – Geen one-size-fits-all. Jouw
+                    doelen, achtergrond en lichaamstype staan centraal. Je
+                    krijgt een plan op maat dat werkt voor jou — omdat jij uniek
+                    bent, net als jouw transformatie.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Community & support – je staat er niet alleen voor.</span>
+                  <span>
+                    🤝 Community & support – Je staat er niet alleen voor. Je
+                    wordt onderdeel van een community die je motiveert, steunt
+                    en met je meegroeit. Samen maken we progressie — fysiek én
+                    mentaal.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Wekelijkse check-ins & video-analyse – om je progressie te monitoren.</span>
+                  <span>
+                    Wekelijkse check-ins & video-analyse – Aan de hand van data
+                    die jij invoert over je leefstijl en trainingen, ontvang je
+                    wekelijks een persoonlijke video-analyse. Zo blijven we
+                    scherp op jouw voortgang én in verbinding tijdens jouw
+                    traject.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Voedingsbegeleiding – leren tracken zonder crashdiëten.</span>
+                  <span>
+                    Voedingsbegeleiding – Voeding hoeft niet ingewikkeld te
+                    zijn. Jij krijgt een schema op maat, gebaseerd op jouw doel,
+                    zonder quick fixes. We bouwen aan een gezonde relatie met
+                    voeding en jij leert stap voor stap zelfstandig tracken. De
+                    basis is key. .
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Slim trainen (2-4x per week) – techniek & progressie staan centraal.</span>
+                  <span>
+                    Slim trainen (2-4x per week) – Je leert bewegen met
+                    controle, kracht en veiligheid — volledig afgestemd op jouw
+                    niveau. Techniek is de basis voor progressie en blessurevrij
+                    trainen. Bij MoM train je 2, 3 of 4 keer per week. Slim
+                    trainen staat centraal: kwaliteit boven kwantiteit.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Direct contact via WhatsApp – altijd bereikbaar voor vragen en feedback.</span>
+                  <span>
+                    Direct contact via WhatsApp – Korte lijnen, snel schakelen.
+                    Je kunt dagelijks appen met je vragen, struggles of
+                    successen. Ik ben er om je te begeleiden wanneer jij dat
+                    nodig hebt.
+                  </span>
                 </li>
               </ul>
-              <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
+              <Button
+                className="bg-red-500 hover:bg-red-600 text-white"
+                asChild
+              >
                 <Link href="/contact">Boek een gratis kennismaking</Link>
               </Button>
             </div>
@@ -101,18 +144,26 @@ export default function DienstenPage() {
         <div className="container px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Technieklessen</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                🏋️‍♂️ Technieklessen & Personal Training
+              </h2>
               <div className="w-20 h-1 bg-red-500 mb-6"></div>
               <p className="text-white/70 mb-8">
-                Goede techniek is de basis van elke transformatie. Ik help je stap voor stap je techniek te verbeteren,
-                zodat je veiliger traint, meer uit elke oefening haalt en sneller resultaat boekt.
+                Wil je jouw techniek naar een hoger niveau tillen? Dan kun je
+                altijd extra technieklessen volgen of een aantal PT-sessies
+                afnemen naast dit programma. Deze sessies zijn gericht op
+                verfijning, persoonlijke aandacht en het verbeteren van jouw
+                uitvoering.
               </p>
 
               <h3 className="text-xl font-bold mb-4">Wat krijg je?</h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                  <span>Persoonlijke begeleiding – volledig afgestemd op jouw niveau.</span>
+                  <span>
+                    Persoonlijke begeleiding – volledig afgestemd op jouw
+                    niveau.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
@@ -127,7 +178,10 @@ export default function DienstenPage() {
                   <span>Maximaal resultaat uit elke oefening.</span>
                 </li>
               </ul>
-              <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
+              <Button
+                className="bg-red-500 hover:bg-red-600 text-white"
+                asChild
+              >
                 <Link href="/contact">Boek een technieksessie</Link>
               </Button>
             </div>
@@ -151,10 +205,13 @@ export default function DienstenPage() {
       <section className="py-24 bg-black">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">RESULTATEN VAN KLANTEN</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              RESULTATEN VAN KLANTEN
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-2xl">
-              Ontdek de verhalen van mensen die hun doelen hebben bereikt met het MoM Programma.
+              Ontdek de verhalen van mensen die hun doelen hebben bereikt met
+              het MoM Programma.
             </p>
           </div>
 
@@ -177,8 +234,9 @@ export default function DienstenPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Het MoM programma heeft me niet alleen geholpen met afvallen, maar ook met het opbouwen van een
-                  gezonde relatie met voeding en beweging. De persoonlijke aanpak maakt echt het verschil."
+                  "Het MoM programma heeft me niet alleen geholpen met afvallen,
+                  maar ook met het opbouwen van een gezonde relatie met voeding
+                  en beweging. De persoonlijke aanpak maakt echt het verschil."
                 </p>
               </div>
             </div>
@@ -201,9 +259,10 @@ export default function DienstenPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Als moeder van twee kinderen vond ik het moeilijk om tijd voor mezelf vrij te maken. Het flexibele
-                  programma en de praktische voedingstips hebben me geholpen om mijn doelen te bereiken zonder mijn
-                  drukke leven te verstoren."
+                  "Als moeder van twee kinderen vond ik het moeilijk om tijd
+                  voor mezelf vrij te maken. Het flexibele programma en de
+                  praktische voedingstips hebben me geholpen om mijn doelen te
+                  bereiken zonder mijn drukke leven te verstoren."
                 </p>
               </div>
             </div>
@@ -226,9 +285,10 @@ export default function DienstenPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Na jaren van ongestructureerd trainen besloot ik professionele hulp te zoeken. Het gepersonaliseerde
-                  trainingsschema en voedingsplan hebben me geholpen om eindelijk de resultaten te bereiken waar ik naar
-                  streefde."
+                  "Na jaren van ongestructureerd trainen besloot ik
+                  professionele hulp te zoeken. Het gepersonaliseerde
+                  trainingsschema en voedingsplan hebben me geholpen om
+                  eindelijk de resultaten te bereiken waar ik naar streefde."
                 </p>
               </div>
             </div>
@@ -240,16 +300,27 @@ export default function DienstenPage() {
       <section className="py-24 bg-zinc-950 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay z-20"></div>
-          <Image src="/images/fitness-3.png" alt="Achtergrond" fill className="object-cover" />
+          <Image
+            src="/images/fitness-3.png"
+            alt="Achtergrond"
+            fill
+            className="object-cover"
+          />
         </div>
         <div className="container relative z-10 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM TE BEGINNEN?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              KLAAR OM TE BEGINNEN?
+            </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Neem vandaag nog contact op voor een gratis kennismaking en ontdek hoe het MoM Programma je kan helpen je
-              doelen te bereiken.
+              Neem vandaag nog contact op voor een gratis kennismaking en ontdek
+              hoe het MoM Programma je kan helpen je doelen te bereiken.
             </p>
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
+            <Button
+              size="lg"
+              className="bg-red-500 hover:bg-red-600 text-white"
+              asChild
+            >
               <Link href="/contact">Boek een gratis kennismaking</Link>
             </Button>
           </div>
@@ -272,7 +343,8 @@ export default function DienstenPage() {
                 <span className="text-xl font-bold">MIND OVER MUSCLE</span>
               </Link>
               <p className="text-white/70 mb-4">
-                Transformatie van lichaam en geest door deskundige coaching en begeleiding.
+                Transformatie van lichaam en geest door deskundige coaching en
+                begeleiding.
               </p>
               <div className="space-y-1 text-sm text-white/50">
                 <p>KvK: 90818369</p>
@@ -286,22 +358,34 @@ export default function DienstenPage() {
               <h3 className="text-lg font-bold mb-4">Sitemap</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/diensten" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/diensten"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Diensten
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mijn-verhaal" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/mijn-verhaal"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Mijn Verhaal
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-white/70 hover:text-red-500 transition">
+                  <Link
+                    href="/contact"
+                    className="text-white/70 hover:text-red-500 transition"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -319,13 +403,22 @@ export default function DienstenPage() {
                 </Link>
               </div>
               <div className="space-y-2">
-                <Link href="/algemene-voorwaarden" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/algemene-voorwaarden"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Algemene voorwaarden
                 </Link>
-                <Link href="/privacybeleid" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/privacybeleid"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Privacybeleid
                 </Link>
-                <Link href="/cookiebeleid" className="block text-white/70 hover:text-red-500 transition">
+                <Link
+                  href="/cookiebeleid"
+                  className="block text-white/70 hover:text-red-500 transition"
+                >
                   Cookiebeleid
                 </Link>
               </div>
@@ -334,11 +427,12 @@ export default function DienstenPage() {
 
           <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm">
-              © {new Date().getFullYear()} Mind Over Muscle. Alle rechten voorbehouden.
+              © {new Date().getFullYear()} Mind Over Muscle. Alle rechten
+              voorbehouden.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
