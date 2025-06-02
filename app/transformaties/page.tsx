@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { CheckCircle } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export default function TransformatiesPage() {
   return (
@@ -31,8 +31,10 @@ export default function TransformatiesPage() {
               ECHTE <span className="text-red-500">TRANSFORMATIES</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8">
-              Geen trucjes. Geen shortcuts. Alleen échte mensen die met de juiste begeleiding en mindset hun doelen
-              hebben bereikt.
+              Geen trucjes. Geen shortcuts. Alleen échte mensen die, met de
+              juiste begeleiding en mindset, keihard hebben gewerkt aan hun
+              doelen. Laat je inspireren door hun resultaten — en zie wat er
+              voor jou mogelijk is.
             </p>
           </div>
         </div>
@@ -42,10 +44,13 @@ export default function TransformatiesPage() {
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">SUCCESVERHALEN</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              SUCCESVERHALEN
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-3xl">
-              Ontdek de verhalen achter deze transformaties en laat je inspireren door hun reis.
+              Ontdek de verhalen achter deze transformaties en laat je
+              inspireren door hun reis.
             </p>
           </div>
 
@@ -63,8 +68,14 @@ export default function TransformatiesPage() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Jules | 18 Weken Transformatie</h3>
-                <p className="text-white/70 mb-4">Doel: Droogtrainen voor een fotoshoot</p>
+                <h3 className="text-2xl font-bold mb-2">
+                  Jules | 18 Weken Transformatie
+                </h3>
+                <p className="text-white/70 mb-4">
+                  Doel: Droogtrainen voor een fotoshoot! In slechts 18 weken
+                  verloor Jules maar liefst 14,8 kg, -13 cm buikomtrek, en -9 cm
+                  heupomtrek en was hij ready voor de SHOOT van zijn leven!🔥
+                </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="font-bold">Resultaten:</span>
@@ -85,8 +96,11 @@ export default function TransformatiesPage() {
                   </ul>
                 </div>
                 <p className="text-white/80 mb-6 italic">
-                  "Ik had nooit gedacht dat ik in 18 weken zo'n transformatie kon bereiken. De online coaching gaf me
-                  inzicht én de vrijheid om zelf de regie te pakken."
+                  "Ik had nooit gedacht dat ik in 18 weken zo'n transformatie
+                  kon bereiken. De combinatie van online coaching waarin ik veel
+                  eigen regie had en een coach die online beschikbaar is heeft
+                  echt het verschil gemaakt. Ik voel me sterker, energieker en
+                  zelfverzekerder dan ooit."
                 </p>
               </div>
             </div>
@@ -104,8 +118,15 @@ export default function TransformatiesPage() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Gerbert | 24 Weken Transformatie</h3>
-                <p className="text-white/70 mb-4">Doel: Afvallen, balans vinden in voeding & beweging</p>
+                <h3 className="text-2xl font-bold mb-2">
+                  Gerbert | 24 Weken Transformatie
+                </h3>
+                <p className="text-white/70 mb-4">
+                  Doel: Afvallen, balans vinden in een gezonde relatie met
+                  voeding & beweging. In slechts 24 weken verloor Gerbert 24kg,
+                  -25,5 cm in buikomvang, en 1-4,5 cm in heupomvang! Dit heeft
+                  hij afgesloten met een prachtige leefstijl shoot!
+                </p>
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="font-bold">Resultaten:</span>
@@ -152,10 +173,13 @@ export default function TransformatiesPage() {
       <section className="py-24 bg-black">
         <div className="container px-4">
           <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">WAT KLANTEN ZEGGEN</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              WAT KLANTEN ZEGGEN
+            </h2>
             <div className="w-20 h-1 bg-red-500 mb-6"></div>
             <p className="text-white/70 max-w-2xl">
-              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met Mind Over Muscle.
+              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met
+              Mind Over Muscle.
             </p>
           </div>
 
@@ -174,12 +198,16 @@ export default function TransformatiesPage() {
                   </div>
                   <div>
                     <h4 className="font-bold">Emma Jansen</h4>
-                    <p className="text-white/70 text-sm">Online Coaching Programma</p>
+                    <p className="text-white/70 text-sm">
+                      Online Coaching Programma
+                    </p>
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "De persoonlijke aandacht en expertise hebben echt het verschil gemaakt in mijn fitnessreis. Ik heb
-                  niet alleen mijn lichaam getransformeerd, maar ook mijn relatie met voeding en beweging."
+                  "De persoonlijke aandacht en expertise hebben echt het
+                  verschil gemaakt in mijn fitnessreis. Ik heb niet alleen mijn
+                  lichaam getransformeerd, maar ook mijn relatie met voeding en
+                  beweging."
                 </p>
               </div>
             </div>
@@ -202,8 +230,10 @@ export default function TransformatiesPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "Als iemand die altijd heeft geworsteld met fitness, was de begeleiding precies wat ik nodig had. De
-                  aanpak is wetenschappelijk onderbouwd maar ook praktisch en haalbaar voor het dagelijks leven."
+                  "Als iemand die altijd heeft geworsteld met fitness, was de
+                  begeleiding precies wat ik nodig had. De aanpak is
+                  wetenschappelijk onderbouwd maar ook praktisch en haalbaar
+                  voor het dagelijks leven."
                 </p>
               </div>
             </div>
@@ -226,9 +256,10 @@ export default function TransformatiesPage() {
                   </div>
                 </div>
                 <p className="text-white/90 italic mb-4">
-                  "De 'mind over muscle' filosofie heeft me geleerd dat fitness meer is dan alleen fysieke training. De
-                  mentale coaching en ondersteuning hebben me geholpen om barrières te doorbreken die ik nooit had
-                  gedacht te kunnen overwinnen."
+                  "De 'mind over muscle' filosofie heeft me geleerd dat fitness
+                  meer is dan alleen fysieke training. De mentale coaching en
+                  ondersteuning hebben me geholpen om barrières te doorbreken
+                  die ik nooit had gedacht te kunnen overwinnen."
                 </p>
               </div>
             </div>
@@ -249,12 +280,19 @@ export default function TransformatiesPage() {
         </div>
         <div className="container relative z-10 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">KLAAR OM TE TRANSFORMEREN?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              KLAAR OM TE TRANSFORMEREN?
+            </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Zet de eerste stap naar een sterker, gezonder leven. Boek vandaag nog een consult en ontdek hoe Mind Over
-              Muscle je kan helpen je fitnessdoelen te bereiken.
+              Zet de eerste stap naar een sterker, gezonder leven. Boek vandaag
+              nog een consult en ontdek hoe Mind Over Muscle je kan helpen je
+              fitnessdoelen te bereiken.
             </p>
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" asChild>
+            <Button
+              size="lg"
+              className="bg-red-500 hover:bg-red-600 text-white"
+              asChild
+            >
               <Link href="/contact">Plan een gratis consult</Link>
             </Button>
           </div>
@@ -263,5 +301,5 @@ export default function TransformatiesPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
