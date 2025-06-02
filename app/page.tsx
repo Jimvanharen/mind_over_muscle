@@ -33,7 +33,7 @@ export default function Home() {
             <div className="absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
               <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
                 <Image
-                  src="/unnamed.jpg"
+                  src="/front.jpeg"
                   alt="Man with male client"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
