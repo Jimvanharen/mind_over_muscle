@@ -18,7 +18,7 @@ export default function DienstenPage() {
           <div className="absolute inset-0 bg-black/60 z-10"></div>
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
+            src="/programma.jpeg"
             alt="Diensten"
             fill
             className="object-cover grayscale"
