@@ -33,7 +33,7 @@ export default function Home() {
             <div className="absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
               <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_e7faa904.jpg-E2td6OHPx7HgrQG73Wdhfw9Wlm3ALH.jpeg"
+                  src="/unnamed.jpg"
                   alt="Man with male client"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
