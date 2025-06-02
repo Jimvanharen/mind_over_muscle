@@ -280,7 +280,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
               <Image
-                src="/vincent_gerbert.jpeg"
+                src="/about.jpg"
                 alt="Vincent"
                 width={600}
                 height={600}
