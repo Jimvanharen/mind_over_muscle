@@ -275,43 +275,51 @@ export default function Home() {
       </section>
 
       <section className="py-24 bg-black">
-          <div className="container px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
-                <Image
-                  src="/vincent_gerbert.jpeg"
-                  alt="Vincent"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto rounded-lg object-cover"
-                />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500 rounded-lg hidden md:block"></div>
-              </div>
+        <div className="container px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20 pointer-events-none"></div>
+              <Image
+                src="/vincent_gerbert.jpeg"
+                alt="Vincent"
+                width={600}
+                height={600}
+                className="w-full h-auto rounded-lg object-cover"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500 rounded-lg hidden md:block"></div>
+            </div>
 
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">OVER MIJ</h2>
-                <div className="w-20 h-1 bg-red-500 mb-6"></div>
-                <p className="text-white/70 mb-6">
-                  Mijn transformatie begon toen ik vastzat — in mijn lijf, mijn hoofd, en patronen die me jaren lang klein
-                  hielden. Krachttraining, de juiste voeding, reflectie en doorzetten brachten me stap voor stap vooruit.
-                  Die reis werd de basis van Mind Over Muscle.
-                </p>
-                <p className="text-white/70 mb-6">
-                  Met een specialistische GGZ-achtergrond en een diepe passie voor fitness, voeding, leefstijl en mindset,
-                  heb ik een uniek online coachprogramma ontwikkeld dat wetenschappelijke kennis verbindt met échte
-                  verandering met een community die achter jouw doelen staat.
-                </p>
-                <p className="text-white/70 mb-8">
-                  Geen quick fixes. Wél duurzame transformatie — van binnen en van buiten.
-                </p>
-                <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
-                  <Link href="/mijn-verhaal">Lees mijn verhaal</Link>
-                </Button>
-              </div>
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">OVER MIJ</h2>
+              <div className="w-20 h-1 bg-red-500 mb-6"></div>
+              <p className="text-white/70 mb-6">
+                Mijn transformatie begon toen ik vastzat — in mijn lijf, mijn
+                hoofd, en patronen die me jaren lang klein hielden.
+                Krachttraining, de juiste voeding, reflectie en doorzetten
+                brachten me stap voor stap vooruit. Die reis werd de basis van
+                Mind Over Muscle.
+              </p>
+              <p className="text-white/70 mb-6">
+                Met een specialistische GGZ-achtergrond en een diepe passie voor
+                fitness, voeding, leefstijl en mindset, heb ik een uniek online
+                coachprogramma ontwikkeld dat wetenschappelijke kennis verbindt
+                met échte verandering met een community die achter jouw doelen
+                staat.
+              </p>
+              <p className="text-white/70 mb-8">
+                Geen quick fixes. Wél duurzame transformatie — van binnen en van
+                buiten.
+              </p>
+              <Button
+                className="bg-red-500 hover:bg-red-600 text-white"
+                asChild
+              >
+                <Link href="/mijn-verhaal">Lees mijn verhaal</Link>
+              </Button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-zinc-950 relative overflow-hidden">
@@ -330,9 +338,11 @@ export default function Home() {
               KLAAR OM TE TRANSFORMEREN?
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Zet de eerste stap naar een sterker, gezonder leven. Boek vandaag
-              nog een consult en ontdek hoe Mind Over Muscle je kan helpen je
-              fitnessdoelen te bereiken.
+              Klaar om te transformeren met een uniek transformatie programma
+              dat net zo uniek is als jijzelf? Zet vandaag de eerste stap naar
+              een sterker, gezonder en veerkrachtiger leven. Boek een gratis
+              kennismaking en ontdek hoe Mind Over Muscle jou helpt je doelen
+              écht te bereiken.
             </p>
             <Button
               size="lg"
