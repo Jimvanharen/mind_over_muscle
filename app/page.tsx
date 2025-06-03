@@ -30,7 +30,7 @@ export default function Home() {
           {/* Diagonal overlapping image boxes */}
           <div className="absolute inset-0">
             {/* First image box - top left */}
-            <div className="absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
+            <div className="hidden md:block absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
               <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
                 <Image
                   src="/front.jpeg"
@@ -43,13 +43,26 @@ export default function Home() {
             </div>
 
             {/* Second image box - bottom right */}
-            <div className="absolute bottom-16 right-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-40">
+            <div className="absolute bottom-16 right-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-40 md:block">
               <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
                   alt="Man with female client"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Mobile single image - centered */}
+            <div className="md:hidden absolute inset-0 flex items-center justify-center">
+              <div className="w-80 h-96 rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
+                  alt="Man with female client"
+                  fill
+                  className="object-cover grayscale"
                   priority
                 />
               </div>
