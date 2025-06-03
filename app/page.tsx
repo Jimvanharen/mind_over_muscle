@@ -23,77 +23,72 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden min-h-[80vh]">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10"></div>
-          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
+              {/* Background elements - Always visible */}
+              <div className="absolute inset-0 bg-black/60 z-10"></div>
+              <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
 
-          {/* Diagonal overlapping image boxes */}
-          <div className="absolute inset-0">
-            {/* First image box - top left */}
-            <div className="hidden md:block absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
-              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
-                <Image
-                  src="/front.jpeg"
-                  alt="Man with male client"
-                  fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  priority
-                />
+              {/* Mobile video - Only visible on mobile */}
+              <div className="md:hidden absolute inset-0">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                >
+                  <source src="/intro.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-            </div>
 
-            {/* Second image box - bottom right */}
-            <div className="absolute bottom-16 right-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-40 md:block">
-              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
-                  alt="Man with female client"
-                  fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  priority
-                />
+              {/* Desktop images - Only visible on desktop */}
+              <div className="hidden md:block absolute inset-0">
+                {/* First image box - top left */}
+                <div className="absolute top-16 left-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-30">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
+                    <Image
+                      src="/front.jpeg"
+                      alt="Man with male client"
+                      fill
+                      className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      priority
+                    />
+                  </div>
+                </div>
+
+                {/* Second image box - bottom right */}
+                <div className="absolute bottom-16 right-16 w-[450px] h-[550px] md:w-[550px] md:h-[650px] z-40">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
+                      alt="Man with female client"
+                      fill
+                      className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      priority
+                    />
+                  </div>
+                </div>
+
+                {/* Background gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/80 z-20"></div>
               </div>
-            </div>
 
-            {/* Mobile single image - centered */}
-            <div className="md:hidden absolute inset-0 flex items-center justify-center">
-              <div className="w-80 h-96 rounded-lg overflow-hidden shadow-2xl border-4 border-white/20">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Afbeelding%20van%20WhatsApp%20op%202025-03-09%20om%2021.52.38_24510821.jpg-GGlxUHXuVMWha3LAXnBh5Tl3ykHNSM.jpeg"
-                  alt="Man with female client"
-                  fill
-                  className="object-cover grayscale"
-                  priority
-                />
+              {/* Content container */}
+              <div className="container relative z-50 px-4 flex items-center min-h-[60vh]">
+                <div className="max-w-3xl">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                    Mindset eerst, lichaam volgt;{" "}
+                    <span className="text-red-500">transformeer je leven</span>
+                  </h1>
+                  <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
+                    Geen quick fixes, maar blijvende resultaten — met een coach die
+                    jou leert hoe je zélf de regie pakt over je doelen, lichaam én je
+                    leven.
+                  </p>
+                  <CalendlyDialog />
+                </div>
               </div>
-            </div>
-
-            {/* Background gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/80 z-20"></div>
-          </div>
-        </div>
-
-        <div className="container relative z-50 px-4 flex items-center min-h-[60vh]">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Mindset eerst, lichaam volgt;{" "}
-              <span className="text-red-500">transformeer je leven</span>
-            </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-              Geen quick fixes, maar blijvende resultaten — met een coach die
-              jou leert hoe je zélf de regie pakt over je doelen, lichaam én je
-              leven.
-            </p>
-            <Button
-              size="lg"
-              className="bg-red-500 hover:bg-red-600 text-white"
-              asChild
-            >
-              <Link href="/contact">Plan een gratis consult</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+            </section>
 
       {/* Transformations Section */}
       <section className="py-24 bg-zinc-950">
