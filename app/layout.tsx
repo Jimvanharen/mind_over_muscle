@@ -19,6 +19,16 @@ const jsonLd = {
   description:
     "Mind Over Muscle is een top-beoordeelde personal trainer in regio Utrecht die online coaching en op maat gemaakte voedingsschema's aanbiedt. Wij zijn LGBTQ+ vriendelijk. Een afspraak is verplicht.",
   priceRange: "€€",
+   address: {
+    "@type": "PostalAddress",
+    addressLocality: "Utrecht",
+    addressRegion: "UT", 
+    addressCountry: "NL", 
+  },
+  areaServed: {
+    "@type": "AdministrativeArea",
+    name: "Regio Utrecht",
+  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
