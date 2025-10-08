@@ -10,39 +10,55 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness", // Specifieker voor personal training
-  name: "Mind Over Muscle",
-  image: "https://mindovermuscle.nl/weblogo.jpg", // Dit moet een volledige URL zijn
-  url: "https://mindovermuscle.nl",
-  telephone: "+31610054053",
-  email: "info@mindovermuscle.nl",
-  description:
-    "Mind Over Muscle is een top-beoordeelde personal trainer in regio Utrecht die online coaching en op maat gemaakte voedingsschema's aanbiedt. Wij zijn LGBTQ+ vriendelijk. Een afspraak is verplicht.",
-  priceRange: "€€",
-   address: {
+  "@type": ["PersonalTrainer", "HealthAndBeautyBusiness"], // Nog specifieker!
+  "name": "Mind Over Muscle",
+  "image": "https://mindovermuscle.nl/weblogo.jpg",
+  "url": "https://mindovermuscle.nl",
+  "telephone": "+31610054053",
+  "email": "info@mindovermuscle.nl",
+  "foundingDate": "2022-05-04", // Oprichtingsdatum toegevoegd
+  "description": "Mind Over Muscle (MoM) is een online coaching- en transformatieprogramma, geleid door een ervaren personal trainer met een achtergrond in de GGZ. Wij combineren krachttraining, voeding, en mindset voor duurzame resultaten in Utrecht en heel Nederland. Een afspraak is verplicht. LGBTQ+ vriendelijk.", // Aangepast naar de nieuwe, rijkere tekst
+  "address": {
     "@type": "PostalAddress",
-    addressLocality: "Utrecht",
-    addressRegion: "UT", 
-    addressCountry: "NL", 
+    "addressLocality": "Utrecht",
+    "addressRegion": "UT",
+      "addressCountry": "NL"
   },
-  areaServed: {
-    "@type": "AdministrativeArea",
-    name: "Regio Utrecht",
-  },
-  openingHoursSpecification: [
+  "areaServed": [ // Uitgebreid naar meerdere gebieden
+    {
+      "@type": "City",
+      "name": "Utrecht"
+    },
+    {
+      "@type": "Country",
+      "name": "Nederland"
+    }
+  ],
+  "contactPoint": [ // Contactpunt voor WhatsApp toegevoegd
+    {
+      "@type": "ContactPoint",
+      "telephone": "+31610054053",
+      "contactType": "customer support",
+      "areaServed": "NL",
+      "availableLanguage": ["Dutch", "English"],
+      "contactOption": "TollFree" // Gebruik "TollFree" omdat WhatsApp gratis is
+    }
+  ],
+  "priceRange": "€€",
+  "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00", // Pas dit aan als je openingstijd anders is
-      closes: "17:00",
-    },
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00", // Gecorrigeerde openingstijd
+      "closes": "17:00"
+    }
   ],
-  aggregateRating: {
+  "aggregateRating": {
     "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "10",
+    "ratingValue": "5.0",
+    "reviewCount": "10"
   },
-  sameAs: ["https://instagram.com/vinnievinc.fit"],
+  "sameAs": ["https://www.instagram.com/vinnievinc.fit/"]
 };
 
 export const metadata: Metadata = {
