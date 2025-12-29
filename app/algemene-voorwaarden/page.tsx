@@ -46,198 +46,348 @@ export default function AlgemeneVoorwaardenPage() {
                 Algemene Voorwaarden voor het 'Mind Over Muscle'
                 Coachingprogramma
               </h2>
-
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 1: Definities
+                  Artikel 1 – Definities
                 </h3>
-                <p className="text-white/80 mb-4">
-                  In deze algemene voorwaarden wordt verstaan onder:
-                </p>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    <strong>Coachingprogramma:</strong> Het door Mind Over
-                    Muscle aangeboden traject gericht op persoonlijke
-                    ontwikkeling, krachttraining, voeding en mindset.
+                    <strong>Mind Over Muscle:</strong> aanbieder van online
+                    coaching op het gebied van krachttraining, voeding, mindset
+                    en leefstijl.
                   </li>
                   <li>
-                    <strong>Deelnemer:</strong> De natuurlijke persoon die zich
-                    heeft ingeschreven voor het coachingprogramma.
+                    <strong>Coachingprogramma:</strong> het door Mind Over
+                    Muscle aangeboden coachingtraject, in welke vorm dan ook.
                   </li>
                   <li>
-                    <strong>Overeenkomst:</strong> De overeenkomst tussen Mind
-                    Over Muscle en de Deelnemer met betrekking tot het
-                    coachingprogramma.
+                    <strong>Deelnemer:</strong> de natuurlijke persoon die een
+                    overeenkomst aangaat met Mind Over Muscle.
                   </li>
                   <li>
-                    <strong>Automatische incasso:</strong> De overeengekomen
-                    betaling van het coachingprogramma via een maandelijkse
-                    automatische incasso gedurende minimaal drie maanden.
+                    <strong>Overeenkomst:</strong> de overeenkomst tussen Mind
+                    Over Muscle en de Deelnemer waarop deze algemene voorwaarden
+                    van toepassing zijn.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 2: Toepasselijkheid
+                  Artikel 2 – Toepasselijkheid
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Deze algemene voorwaarden zijn van toepassing op alle
-                    overeenkomsten tussen Mind Over Muscle en Deelnemer met
-                    betrekking tot deelname aan het coachingprogramma.
+                    overeenkomsten tussen Mind Over Muscle en de Deelnemer.
                   </li>
                   <li>
-                    Afwijkingen van deze algemene voorwaarden zijn alleen geldig
-                    indien deze schriftelijk zijn overeengekomen.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 3: Inschrijving en betaling
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-white/80">
-                  <li>
-                    Inschrijving voor het coachingprogramma vindt plaats door
-                    middel van een volledig ingevuld inschrijfformulier of
-                    digitale aanmelding.
+                    Afwijkingen zijn uitsluitend geldig indien schriftelijk
+                    overeengekomen.
                   </li>
                   <li>
-                    De deelnemer verplicht zich bij inschrijving tot betaling
-                    van het volledige bedrag van het coachingprogramma, zoals
-                    overeengekomen in de overeenkomst.
-                  </li>
-                  <li>
-                    Betaling geschiedt via automatische incasso gedurende
-                    minimaal drie maanden. De Deelnemer geeft door inschrijving
-                    toestemming voor de automatische incasso van de
-                    overeengekomen bedragen.
-                  </li>
-                  <li>
-                    Het minimumbedrag voor deelname aan het coachingprogramma
-                    bedraagt de kosten van drie maanden deelname. Restitutie
-                    voor deze periode is niet mogelijk.
-                  </li>
-                  <li>
-                    Betalingen die via automatische incasso worden uitgevoerd,
-                    kunnen niet worden gestorneerd. De Deelnemer verplicht zich
-                    tot zorgvuldige naleving van de betalingsverplichting.
+                    Door inschrijving verklaart de Deelnemer kennis te hebben
+                    genomen van en akkoord te gaan met deze algemene voorwaarden.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 4: Annulering en opzegging
+                  Artikel 3 – Inschrijving, looptijd en voortzetting
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    Annulering van de overeenkomst is mogelijk binnen 14 dagen
-                    na inschrijving (herroepingsrecht), tenzij het programma al
-                    is gestart.
+                    Inschrijving voor het coachingprogramma vindt plaats via
+                    een digitaal intake- of aanmeldformulier.
                   </li>
                   <li>
-                    Na afloop van de eerste drie maanden kan de overeenkomst
-                    schriftelijk worden opgezegd met een opzegtermijn van 1
-                    maand.
+                    De overeenkomst komt tot stand na bevestiging door Mind
+                    Over Muscle.
                   </li>
                   <li>
-                    Bij tussentijdse beëindiging door de Deelnemer is het
-                    volledige bedrag voor de eerste drie maanden verschuldigd.
+                    De overeenkomst wordt aangegaan voor een minimale duur van
+                    zes (6) maanden.
+                  </li>
+                  <li>
+                    Na afloop van deze minimale looptijd wordt de overeenkomst
+                    stilzwijgend voortgezet voor onbepaalde tijd, tenzij de
+                    overeenkomst tijdig wordt opgezegd conform artikel 5.
+                  </li>
+                  <li>
+                    Opzeggingen die worden gedaan tijdens de minimale looptijd
+                    hebben pas effect na afloop van deze periode.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 5: Verplichtingen van de Deelnemer
+                  Artikel 4 – Betaling
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    De Deelnemer dient naar beste vermogen mee te werken aan het
-                    behalen van de doelstellingen van het coachingprogramma.
+                    Betaling geschiedt per periode van vier (4) weken via
+                    factuur, tenzij schriftelijk anders overeengekomen.
                   </li>
                   <li>
-                    De Deelnemer verklaart dat hij/zij fysiek en mentaal in
-                    staat is om deel te nemen aan het programma. Mind Over
-                    Muscle is niet verantwoordelijk voor eventuele fysieke of
-                    mentale schade die voortvloeit uit deelname.
+                    Facturen dienen binnen veertien (14) dagen na factuurdatum
+                    te worden voldaan.
+                  </li>
+                  <li>
+                    De Deelnemer blijft te allen tijde het volledige bedrag
+                    verschuldigd over de minimale looptijd van zes (6) maanden.
+                  </li>
+                  <li>
+                    Bij tussentijdse beëindiging van de overeenkomst vindt geen
+                    restitutie plaats.
+                  </li>
+                  <li>
+                    Bij niet-tijdige betaling is de Deelnemer van rechtswege in
+                    verzuim. Mind Over Muscle is gerechtigd wettelijke rente en
+                    redelijke buitengerechtelijke incassokosten in rekening te
+                    brengen.
+                  </li>
+                  <li>
+                    Bij aanhoudende wanbetaling behoudt Mind Over Muscle zich
+                    het recht voor de dienstverlening op te schorten of de
+                    overeenkomst te beëindigen, onverminderd het recht op
+                    volledige betaling.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 6: Verplichtingen van Mind Over Muscle
+                  Artikel 5 – Herroepingsrecht en opzegging
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    Mind Over Muscle verplicht zich om het coachingprogramma
-                    naar beste inzicht en vermogen uit te voeren.
+                    De Deelnemer heeft een herroepingsrecht van veertien (14)
+                    dagen na inschrijving, tenzij de dienstverlening reeds is
+                    gestart.
                   </li>
                   <li>
-                    Indien door omstandigheden het programma tijdelijk of
-                    definitief moet worden stopgezet, zal Mind Over Muscle dit
-                    tijdig communiceren en eventueel een alternatief aanbieden.
+                    Door akkoord te gaan met directe start van het
+                    coachingprogramma doet de Deelnemer afstand van het
+                    herroepingsrecht zodra het programma is gestart.
+                  </li>
+                  <li>
+                    Na afloop van de minimale looptijd kan de overeenkomst door
+                    de Deelnemer schriftelijk worden opgezegd met een
+                    opzegtermijn van één (1) maand.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 7: Aansprakelijkheid
+                  Artikel 6 – Verplichtingen van de Deelnemer
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    Mind Over Muscle is niet aansprakelijk voor enige schade,
-                    direct of indirect, die voortvloeit uit deelname aan het
-                    programma, tenzij er sprake is van opzet of grove
+                    De Deelnemer verstrekt juiste, volledige en actuele
+                    informatie die van belang is voor het coachingprogramma.
+                  </li>
+                  <li>
+                    De Deelnemer verklaart fysiek en mentaal in staat te zijn om
+                    deel te nemen aan het coachingprogramma.
+                  </li>
+                  <li>
+                    Deelname geschiedt volledig op eigen verantwoordelijkheid
+                    van de Deelnemer.
+                  </li>
+                  <li>
+                    De Deelnemer dient zich respectvol op te stellen richting
+                    Mind Over Muscle.
+                  </li>
+                  <li>
+                    Indien de Deelnemer structureel niet meewerkt aan het
+                    coachingprogramma, behoudt Mind Over Muscle zich het recht
+                    voor de begeleiding (tijdelijk) op te schorten zonder recht
+                    op restitutie.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 7 – Verplichtingen van Mind Over Muscle
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle zal het coachingprogramma naar beste
+                    inzicht en vermogen uitvoeren.
+                  </li>
+                  <li>
+                    Er geldt een inspanningsverplichting, geen
+                    resultaatsverplichting.
+                  </li>
+                  <li>
+                    Mind Over Muscle behoudt zich het recht voor het programma
+                    (tijdelijk) aan te passen of op te schorten indien
+                    omstandigheden daartoe aanleiding geven.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 8 – Aansprakelijkheid
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle is niet aansprakelijk voor enige directe
+                    of indirecte schade die voortvloeit uit deelname aan het
+                    coachingprogramma, tenzij sprake is van opzet of grove
                     nalatigheid.
                   </li>
                   <li>
-                    De Deelnemer is zelf verantwoordelijk voor het volgen van
-                    het programma en het raadplegen van een arts bij twijfel
-                    over deelname.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">Artikel 8: Privacy</h3>
-                <ul className="list-disc pl-6 space-y-2 text-white/80">
-                  <li>
-                    Mind Over Muscle verwerkt persoonsgegevens van Deelnemers
-                    conform de Algemene Verordening Gegevensbescherming (AVG).
+                    Het coachingprogramma is geen medische, psychologische of
+                    therapeutische behandeling en vervangt geen advies van een
+                    arts of andere zorgprofessional.
                   </li>
                   <li>
-                    De gegevens van Deelnemers worden alleen gebruikt voor
-                    doeleinden die verband houden met de uitvoering van het
-                    coachingprogramma.
+                    Adviezen worden gegeven op basis van door de Deelnemer
+                    verstrekte informatie. Mind Over Muscle is niet
+                    aansprakelijk voor schade die ontstaat door onjuiste of
+                    onvolledige informatie of door eigen interpretatie van
+                    adviezen.
+                  </li>
+                  <li>
+                    Resultaten zijn afhankelijk van inzet, discipline en
+                    persoonlijke omstandigheden; Mind Over Muscle geeft geen
+                    garanties met betrekking tot specifieke resultaten.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 9: Klachtenprocedure
+                  Artikel 9 – Intellectueel eigendom en boetebeding
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    Klachten over het coachingprogramma dienen schriftelijk te
-                    worden ingediend bij Mind Over Muscle.
+                    Alle door Mind Over Muscle verstrekte materialen, waaronder
+                    begrepen maar niet beperkt tot trainingsschema's,
+                    voedingsschema's, handleidingen, teksten, video's,
+                    audio-opnamen, formats, methodieken en overige content,
+                    blijven te allen tijde intellectueel eigendom van Mind Over
+                    Muscle.
                   </li>
                   <li>
-                    Mind Over Muscle zal klachten binnen een termijn van 14
-                    dagen in behandeling nemen en een passende oplossing bieden.
+                    Het is de Deelnemer niet toegestaan deze materialen geheel
+                    of gedeeltelijk te kopiëren, te verspreiden, te delen met
+                    derden, openbaar te maken of commercieel te gebruiken zonder
+                    voorafgaande schriftelijke toestemming van Mind Over Muscle.
+                  </li>
+                  <li>
+                    Bij overtreding van dit artikel is de Deelnemer een direct
+                    opeisbare boete verschuldigd van €2.500 (zegge:
+                    tweeduizend vijfhonderd euro) per overtreding, ongeacht of
+                    de overtreding opzettelijk of onopzettelijk heeft
+                    plaatsgevonden.
+                  </li>
+                  <li>
+                    Deze boete laat het recht van Mind Over Muscle onverlet om,
+                    indien de daadwerkelijk geleden schade hoger is,
+                    aanvullende schadevergoeding te vorderen.
+                  </li>
+                  <li>
+                    De boete heeft primair tot doel het intellectueel eigendom
+                    van Mind Over Muscle te beschermen en dient als
+                    afschrikmiddel tegen ongeoorloofd gebruik.
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 10: Toepasselijk recht en geschillen
+                  Artikel 10 – Gedrag en beëindiging
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle behoudt zich het recht voor de overeenkomst
+                    per direct te beëindigen indien de Deelnemer zich
+                    respectloos, grensoverschrijdend of belemmerend opstelt.
+                  </li>
+                  <li>
+                    In geval van beëindiging op grond van dit artikel vindt
+                    geen restitutie plaats.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 11 – Privacy
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle verwerkt persoonsgegevens conform de
+                    Algemene Verordening Gegevensbescherming (AVG).
+                  </li>
+                  <li>
+                    Persoonsgegevens worden uitsluitend gebruikt voor doeleinden
+                    die verband houden met de uitvoering van de overeenkomst.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 12 – Prijswijzigingen
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle behoudt zich het recht voor de tarieven
+                    maximaal eenmaal per zes (6) maanden aan te passen op basis
+                    van inflatie en stijgende operationele kosten.
+                  </li>
+                  <li>
+                    Prijswijzigingen worden minimaal dertig (30) dagen
+                    voorafgaand aan de ingangsdatum schriftelijk gecommuniceerd.
+                  </li>
+                  <li>
+                    Indien een prijsverhoging plaatsvindt tijdens een lopende
+                    overeenkomst, heeft de Deelnemer het recht de overeenkomst
+                    schriftelijk te beëindigen per ingangsdatum van de
+                    prijswijziging.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 13 – Overmacht
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    In geval van overmacht, waaronder begrepen ziekte,
+                    technische storingen of overheidsmaatregelen, is Mind Over
+                    Muscle niet gehouden tot schadevergoeding. In overleg zal
+                    worden gezocht naar een passend alternatief.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Artikel 14 – Klachten</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Klachten dienen schriftelijk te worden ingediend bij Mind
+                    Over Muscle.
+                  </li>
+                  <li>
+                    Klachten worden binnen veertien (14) dagen in behandeling
+                    genomen en naar een passende oplossing beoordeeld.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Artikel 15 – Toepasselijk recht en geschillen
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
@@ -255,27 +405,17 @@ export default function AlgemeneVoorwaardenPage() {
 
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
-                  Artikel 11: Wijzigingen
+                  Artikel 16 – Wijzigingen
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
-                    Mind Over Muscle behoudt zich het recht voor om deze
-                    algemene voorwaarden te wijzigen. Wijzigingen worden
-                    minimaal 30 dagen voorafgaand aan de inwerkingtreding
-                    gecommuniceerd aan Deelnemers.
+                    Mind Over Muscle behoudt zich het recht voor deze algemene
+                    voorwaarden te wijzigen. Wijzigingen worden minimaal dertig
+                    (30) dagen voorafgaand aan de inwerkingtreding
+                    gecommuniceerd.
                   </li>
                 </ul>
-              </div>
-
-              <div className="mt-12 p-6 bg-zinc-900 rounded-lg border border-white/10">
-                <p className="text-white/80 font-medium">
-                  Door akkoord te gaan met deze algemene voorwaarden, bevestigt
-                  de Deelnemer tevens akkoord te gaan met de automatische
-                  incasso van minimaal drie maanden deelname aan het
-                  coachingprogramma.
-                </p>
-              </div>
-            </div>
+              </div>            </div>
           </div>
         </div>
       </section>
