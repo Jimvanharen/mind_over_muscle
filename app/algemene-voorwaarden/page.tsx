@@ -42,14 +42,14 @@ export default function AlgemeneVoorwaardenPage() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg prose-invert mx-auto">
+﻿
               <h2 className="text-2xl font-bold mb-6">
                 Algemene Voorwaarden voor het 'Mind Over Muscle'
                 Coachingprogramma
               </h2>
+
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 1 – Definities
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 1 – Definities</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     <strong>Mind Over Muscle:</strong> aanbieder van online
@@ -73,9 +73,7 @@ export default function AlgemeneVoorwaardenPage() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 2 – Toepasselijkheid
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 2 – Toepasselijkheid</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Deze algemene voorwaarden zijn van toepassing op alle
@@ -122,9 +120,7 @@ export default function AlgemeneVoorwaardenPage() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 4 – Betaling
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 4 – Betaling</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Betaling geschiedt per periode van vier (4) weken via
@@ -209,7 +205,6 @@ export default function AlgemeneVoorwaardenPage() {
                   </li>
                 </ul>
               </div>
-
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
                   Artikel 7 – Verplichtingen van Mind Over Muscle
@@ -232,9 +227,7 @@ export default function AlgemeneVoorwaardenPage() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 8 – Aansprakelijkheid
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 8 – Aansprakelijkheid</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Mind Over Muscle is niet aansprakelijk voor enige directe
@@ -319,9 +312,7 @@ export default function AlgemeneVoorwaardenPage() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 11 – Privacy
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 11 – Privacy</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Mind Over Muscle verwerkt persoonsgegevens conform de
@@ -334,10 +325,8 @@ export default function AlgemeneVoorwaardenPage() {
                 </ul>
               </div>
 
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 12 – Prijswijzigingen
-                </h3>
+              <div className="mb-12">
+                <h3 className="text-xl font-bold mb-4">Artikel 12 – Prijswijzigingen</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Mind Over Muscle behoudt zich het recht voor de tarieven
@@ -356,11 +345,8 @@ export default function AlgemeneVoorwaardenPage() {
                   </li>
                 </ul>
               </div>
-
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 13 – Overmacht
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Artikel 13 – Overmacht</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     In geval van overmacht, waaronder begrepen ziekte,
@@ -403,10 +389,8 @@ export default function AlgemeneVoorwaardenPage() {
                 </ul>
               </div>
 
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  Artikel 16 – Wijzigingen
-                </h3>
+              <div className="mb-16">
+                <h3 className="text-xl font-bold mb-4">Artikel 16 – Wijzigingen</h3>
                 <ul className="list-disc pl-6 space-y-2 text-white/80">
                   <li>
                     Mind Over Muscle behoudt zich het recht voor deze algemene
@@ -415,7 +399,346 @@ export default function AlgemeneVoorwaardenPage() {
                     gecommuniceerd.
                   </li>
                 </ul>
-              </div>            </div>
+              </div>
+
+              <div className="mt-16 mb-10 border-t border-white/10 pt-10">
+                <h2 className="text-2xl font-bold mb-4">Terms and Conditions – Mind Over Muscle</h2>
+                <p className="text-white/70">
+                  The English version below is provided for convenience. In case
+                  of discrepancies, the Dutch version prevails.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 1 – Definitions</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    <strong>Mind Over Muscle:</strong> the provider of online coaching
+                    in the fields of strength training, nutrition, mindset, and lifestyle.
+                  </li>
+                  <li>
+                    <strong>Coaching Program:</strong> the coaching program offered by
+                    Mind Over Muscle, in any form whatsoever.
+                  </li>
+                  <li>
+                    <strong>Participant:</strong> the natural person who enters into an
+                    agreement with Mind Over Muscle.
+                  </li>
+                  <li>
+                    <strong>Agreement:</strong> the agreement between Mind Over Muscle
+                    and the Participant to which these Terms and Conditions apply.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 2 – Applicability</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    These Terms and Conditions apply to all agreements between Mind Over
+                    Muscle and the Participant.
+                  </li>
+                  <li>
+                    Deviations from these Terms and Conditions are only valid if agreed
+                    upon in writing.
+                  </li>
+                  <li>
+                    By enrolling in the Coaching Program, the Participant declares to
+                    have read and agreed to these Terms and Conditions.
+                  </li>
+                </ul>
+              </div>
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 3 – Enrollment, Term and Continuation
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Enrollment in the Coaching Program takes place via a digital intake
+                    or registration form.
+                  </li>
+                  <li>
+                    The Agreement is concluded once Mind Over Muscle confirms the
+                    enrollment.
+                  </li>
+                  <li>
+                    The Agreement is entered into for a minimum term of six (6) months.
+                  </li>
+                  <li>
+                    After the expiration of this minimum term, the Agreement will be
+                    automatically continued for an indefinite period, unless terminated
+                    in accordance with Article 5.
+                  </li>
+                  <li>
+                    Any termination submitted during the minimum term will only take
+                    effect after the minimum term has ended.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 4 – Payment</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Payment is made every four (4) weeks by invoice, unless otherwise
+                    agreed in writing.
+                  </li>
+                  <li>
+                    Invoices must be paid within fourteen (14) days from the invoice date.
+                  </li>
+                  <li>
+                    The Participant remains fully liable for payment of the total amount
+                    due for the minimum term of six (6) months at all times.
+                  </li>
+                  <li>
+                    No refunds will be granted in the event of early termination.
+                  </li>
+                  <li>
+                    In case of late payment, the Participant is legally in default. Mind
+                    Over Muscle is entitled to charge statutory interest and reasonable
+                    extrajudicial collection costs.
+                  </li>
+                  <li>
+                    In the event of continued non-payment, Mind Over Muscle reserves the
+                    right to suspend the services or terminate the Agreement, without
+                    prejudice to its right to full payment.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 5 – Right of Withdrawal and Termination
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    The Participant has the right to withdraw from the Agreement within
+                    fourteen (14) days after enrollment, unless the services have already
+                    commenced.
+                  </li>
+                  <li>
+                    By agreeing to the immediate start of the Coaching Program, the
+                    Participant waives the right of withdrawal once the program has started.
+                  </li>
+                  <li>
+                    After the minimum term has ended, the Agreement may be terminated in
+                    writing by the Participant with a notice period of one (1) month.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 6 – Obligations of the Participant
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    The Participant is responsible for providing accurate, complete, and
+                    up-to-date information relevant to the Coaching Program.
+                  </li>
+                  <li>
+                    The Participant declares to be physically and mentally capable of
+                    participating in the Coaching Program.
+                  </li>
+                  <li>
+                    Participation in the Coaching Program is entirely at the Participant's
+                    own risk and responsibility.
+                  </li>
+                  <li>
+                    The Participant must behave respectfully toward Mind Over Muscle at
+                    all times.
+                  </li>
+                  <li>
+                    If the Participant structurally fails to cooperate with the Coaching
+                    Program, Mind Over Muscle reserves the right to temporarily suspend
+                    the services without any right to a refund.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 7 – Obligations of Mind Over Muscle
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle shall perform the Coaching Program to the best of its
+                    knowledge and ability.
+                  </li>
+                  <li>
+                    Mind Over Muscle has an obligation of effort, not an obligation of
+                    results.
+                  </li>
+                  <li>
+                    Mind Over Muscle reserves the right to modify or temporarily suspend
+                    the program if circumstances so require.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 8 – Liability</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle shall not be liable for any direct or indirect damage
+                    resulting from participation in the Coaching Program, unless there is
+                    intent or gross negligence.
+                  </li>
+                  <li>
+                    The Coaching Program is not a medical, psychological, or therapeutic
+                    treatment and does not replace advice from a physician or healthcare
+                    professional.
+                  </li>
+                  <li>
+                    Advice is provided based on information supplied by the Participant.
+                    Mind Over Muscle is not liable for damage resulting from incorrect or
+                    incomplete information or from the Participant's own interpretation of
+                    the advice.
+                  </li>
+                  <li>
+                    Results depend on effort, discipline, and personal circumstances; Mind
+                    Over Muscle does not guarantee specific outcomes.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 9 – Intellectual Property and Penalty Clause
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    All materials provided by Mind Over Muscle, including but not limited
+                    to training programs, nutrition plans, manuals, texts, videos, audio
+                    recordings, formats, methodologies, and other content, remain at all
+                    times the intellectual property of Mind Over Muscle.
+                  </li>
+                  <li>
+                    The Participant is not permitted to copy, distribute, share with third
+                    parties, publish, or commercially exploit these materials, in whole or
+                    in part, without prior written consent from Mind Over Muscle.
+                  </li>
+                  <li>
+                    In the event of a violation of this article, the Participant shall owe
+                    an immediately payable penalty of €2,500 (two thousand five hundred
+                    euros) per violation, regardless of whether the violation was
+                    intentional or unintentional.
+                  </li>
+                  <li>
+                    This penalty does not affect the right of Mind Over Muscle to claim
+                    additional damages if the actual damage exceeds the penalty amount.
+                  </li>
+                  <li>
+                    The penalty primarily serves to protect the intellectual property of
+                    Mind Over Muscle and acts as a deterrent against unauthorized use.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 10 – Conduct and Immediate Termination
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle reserves the right to terminate the Agreement with
+                    immediate effect if the Participant behaves disrespectfully, crosses
+                    boundaries, or obstructs the coaching process.
+                  </li>
+                  <li>
+                    In such cases, no refund will be granted.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 11 – Privacy</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle processes personal data in accordance with the
+                    General Data Protection Regulation (GDPR).
+                  </li>
+                  <li>
+                    Personal data is used exclusively for purposes related to the
+                    execution of the Agreement.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 12 – Price Adjustments</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle reserves the right to adjust its rates no more than
+                    once every six (6) months based on inflation and increased operational
+                    costs.
+                  </li>
+                  <li>
+                    Price adjustments will be communicated in writing at least thirty (30)
+                    days prior to their effective date.
+                  </li>
+                  <li>
+                    If a price increase takes effect during an ongoing Agreement, the
+                    Participant has the right to terminate the Agreement effective as of
+                    the date the price increase comes into force.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 13 – Force Majeure</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    In the event of force majeure, including illness, technical failures,
+                    or government measures, Mind Over Muscle shall not be liable for
+                    damages. In such cases, a suitable alternative will be sought in
+                    consultation.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 14 – Complaints</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Complaints must be submitted in writing to Mind Over Muscle.
+                  </li>
+                  <li>
+                    Complaints will be handled within fourteen (14) days and assessed
+                    with the aim of finding an appropriate solution.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">
+                  Article 15 – Applicable Law and Disputes
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    These Terms and Conditions are governed exclusively by Dutch law.
+                  </li>
+                  <li>
+                    Disputes will preferably be resolved by mutual consultation.
+                  </li>
+                  <li>
+                    If this is not possible, disputes will be submitted to the competent
+                    court in the district where Mind Over Muscle is established.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold mb-4">Article 16 – Amendments</h3>
+                <ul className="list-disc pl-6 space-y-2 text-white/80">
+                  <li>
+                    Mind Over Muscle reserves the right to amend these Terms and
+                    Conditions. Amendments will be communicated at least thirty (30) days
+                    prior to their effective date.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
