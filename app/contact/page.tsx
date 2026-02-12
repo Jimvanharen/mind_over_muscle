@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { postNodemailerMail } from "../api/actions/nodemailer.post";
+import { postResendMail } from "../api/actions/nodemailer.post";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,7 +37,7 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (values: ContactFormValues) => {
-    await postNodemailerMail(values);
+    await postResendMail(values);
     form.reset();
   };
 
