@@ -13,7 +13,7 @@ export async function postResendMail(
     const { name, email, message, phone } = mailPayload;
 
     const mailPayloadForResend = {
-      from: email,
+      from: "info@mindovermuscle.nl",
       to: "info@mindovermuscle.nl",
       subject: `Mail ontvangen van ${name}`,
       text: `
