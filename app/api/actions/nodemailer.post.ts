@@ -15,7 +15,7 @@ export async function postResendMail(
     const mailPayloadForResend = {
       from: email,
       to: "info@mindovermuscle.nl",
-      subject: "Mail ontvangen van mindovermuscle.nl",
+      subject: `Mail ontvangen van ${name}`,
       text: `
       Naam: ${name}
       Omschrijving: ${message}
