@@ -13,10 +13,8 @@ export async function postResendMail(
     const { name, email, message, phone } = mailPayload;
 
     const mailPayloadForResend = {
-      from: process.env.RESEND_FROM || "onboarding@resend.dev",
-      to: process.env.RESEND_TO?.includes(",")
-        ? process.env.RESEND_TO.split(",")
-        : [process.env.RESEND_TO || "info@mindovermuscle.nl"],
+      from: email,
+      to: "info@mindovermuscle.nl",
       subject: "Mail ontvangen van mindovermuscle.nl",
       text: `
       Naam: ${name}
