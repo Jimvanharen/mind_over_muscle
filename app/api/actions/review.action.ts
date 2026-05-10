@@ -6,6 +6,7 @@ type Review = {
   text: string
   relative_time_description: string
   profile_photo_url: string
+  language?: string
 }
 
 type ReviewsResponse = {
@@ -22,7 +23,7 @@ export async function getGoogleReviews(reviewPlaceId: string): Promise<ReviewsRe
     }
   }
 
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY
   if (!apiKey) {
     return {
       success: false,
@@ -31,7 +32,7 @@ export async function getGoogleReviews(reviewPlaceId: string): Promise<ReviewsRe
   }
 
   try {
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${reviewPlaceId}&key=${apiKey}&fields=reviews`
+    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${reviewPlaceId}&key=${apiKey}&fields=reviews&language=nl`
 
     const response = await fetch(url)
     const data = await response.json()
@@ -43,9 +44,13 @@ export async function getGoogleReviews(reviewPlaceId: string): Promise<ReviewsRe
       }
     }
 
+    const dutchReviews = data.result.reviews.filter(
+      (review: Review) => review.language === "nl"
+    )
+
     return {
       success: true,
-      reviews: data.result.reviews,
+      reviews: dutchReviews.length > 0 ? dutchReviews : data.result.reviews,
     }
   } catch (error) {
     console.error("Error fetching Google Reviews:", error)

@@ -5,6 +5,7 @@ import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { GoogleReviewsSection } from "@/components/main/google-reviews-section";
 
 export default function TransformatiesPage() {
   return (
@@ -183,87 +184,7 @@ export default function TransformatiesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64"
-                      alt="Klant"
-                      width={64}
-                      height={64}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Emma Jansen</h4>
-                    <p className="text-white/70 text-sm">
-                      Online Coaching Programma
-                    </p>
-                  </div>
-                </div>
-                <p className="text-white/90 italic mb-4">
-                  "De persoonlijke aandacht en expertise hebben echt het
-                  verschil gemaakt in mijn fitnessreis. Ik heb niet alleen mijn
-                  lichaam getransformeerd, maar ook mijn relatie met voeding en
-                  beweging."
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64"
-                      alt="Klant"
-                      width={64}
-                      height={64}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Martijn de Boer</h4>
-                    <p className="text-white/70 text-sm">MoM Programma</p>
-                  </div>
-                </div>
-                <p className="text-white/90 italic mb-4">
-                  "Als iemand die altijd heeft geworsteld met fitness, was de
-                  begeleiding precies wat ik nodig had. De aanpak is
-                  wetenschappelijk onderbouwd maar ook praktisch en haalbaar
-                  voor het dagelijks leven."
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64"
-                      alt="Klant"
-                      width={64}
-                      height={64}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Lisa van Dijk</h4>
-                    <p className="text-white/70 text-sm">Online Coaching</p>
-                  </div>
-                </div>
-                <p className="text-white/90 italic mb-4">
-                  "De 'mind over muscle' filosofie heeft me geleerd dat fitness
-                  meer is dan alleen fysieke training. De mentale coaching en
-                  ondersteuning hebben me geholpen om barrières te doorbreken
-                  die ik nooit had gedacht te kunnen overwinnen."
-                </p>
-              </div>
-            </div>
-          </div>
+          <GoogleReviewsSection />
         </div>
       </section>
 
