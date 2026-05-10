@@ -41,8 +41,6 @@ FROM base AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyC7pAism7roBtPxUUNSekCF-_WFGW7TRVA
-ENV GOOGLE_MAPS_API_KEY=AIzaSyC7pAism7roBtPxUUNSekCF-_WFGW7TRVA
 # Uncomment the following line in case you want to disable telemetry during runtime.
 # ENV NEXT_TELEMETRY_DISABLED=1
 
