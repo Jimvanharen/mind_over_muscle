@@ -1,10 +1,8 @@
 "use client"
 
-import { useState } from "react"
 import { useEffect } from "react"
+import { useState } from "react"
 import { Star } from "lucide-react"
-
-import { Input } from "@/components/ui/input"
 
 type Review = {
   author_name: string
@@ -14,32 +12,19 @@ type Review = {
 }
 
 export function GoogleReviewsSection() {
-  const [placeInput, setPlaceInput] = useState(
-    "ChIJd-fvUgJvxkcRAnTI-QQWHdE"
-  )
+  const placeId = "ChIJd-fvUgJvxkcRAnTI-QQWHdE"
   const [reviews, setReviews] = useState<Review[]>([])
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const fetchReviews = async (inputValue: string) => {
-    if (!inputValue.trim()) {
-      setError("Vul eerst een geldige Place ID of Google Maps-link in.")
-      return
-    }
-
+  const fetchReviews = async () => {
     setLoading(true)
     setError("")
 
     try {
-      const input = inputValue.trim()
-      const isUrl = input.startsWith("http://") || input.startsWith("https://")
-      const isPlaceId = input.startsWith("ChI")
-      const query = isUrl
-        ? `mapUrl=${encodeURIComponent(input)}`
-        : isPlaceId
-          ? `placeId=${encodeURIComponent(input)}`
-          : `query=${encodeURIComponent(input)}`
-      const response = await fetch(`/api/google-reviews?${query}`)
+      const response = await fetch(
+        `/api/google-reviews?placeId=${encodeURIComponent(placeId)}`
+      )
       const data = await response.json()
 
       if (!response.ok || !data.success) {
@@ -58,26 +43,15 @@ export function GoogleReviewsSection() {
   }
 
   useEffect(() => {
-    fetchReviews(placeInput)
+    fetchReviews()
   }, [])
 
   return (
     <div>
-      <div className="max-w-3xl mx-auto mb-10">
-        <div className="flex flex-col gap-3">
-          <Input
-            value={placeInput}
-            onChange={(event) => {
-              const value = event.target.value
-              setPlaceInput(value)
-              fetchReviews(value)
-            }}
-            placeholder="Place ID, Maps-link of bedrijfsnaam (bijv. Mind over Muscle Utrecht)"
-            className="bg-zinc-950 border-white/20 text-white placeholder:text-white/50"
-          />
-        </div>
-        {error ? <p className="text-red-400 text-sm mt-3">{error}</p> : null}
-      </div>
+      {error ? <p className="text-red-400 text-sm mt-3 text-center">{error}</p> : null}
+      {loading ? (
+        <p className="text-center text-white/60 mb-8">Reviews laden...</p>
+      ) : null}
 
       {reviews.length > 0 ? (
         <div className="grid md:grid-cols-3 gap-8">
@@ -100,11 +74,11 @@ export function GoogleReviewsSection() {
             </div>
           ))}
         </div>
-      ) : (
+      ) : !loading ? (
         <p className="text-center text-white/60">
-          Nog geen reviews geladen. Vul een Place ID, Maps-link of bedrijfsnaam in.
+          Geen reviews gevonden.
         </p>
-      )}
+      ) : null}
     </div>
   )
 }
