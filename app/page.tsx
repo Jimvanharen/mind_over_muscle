@@ -91,6 +91,37 @@ export default function Home() {
               </div>
             </section>
 
+      {/* Reviews Section */}
+      <section className="py-24 bg-black">
+        <div className="container px-4">
+          <div className="flex flex-col items-center text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              WAT KLANTEN ZEGGEN
+            </h2>
+            <div className="w-20 h-1 bg-red-500 mb-6"></div>
+            <p className="text-white/70 max-w-2xl mb-8">
+              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met
+              Mind Over Muscle.
+            </p>
+            <Button
+              variant="outline"
+              className="border-white/30 text-white hover:bg-white hover:text-black"
+              asChild
+            >
+              <Link
+                href="https://www.google.com/search?sa=X&sca_esv=8aa21ef7495b70c7&sxsrf=ANbL-n7-d_TaEiq4lMbikxXYBv8Gad5kPg:1778414106346&q=Mind%20over%20Muscle%20Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDc1MzE1NbSwMDC1NLG0NDEzt9jAyPiKUcI3My9FIb8stUjBt7Q4OSdVISi1LDO1vHgRK04pAGdGYg5RAAAA&rldimm=17564551880594994678&tbm=lcl&hl=nl-NL&ved=0CAcQ5foLahcKEwjA1Kfp1K6UAxUAAAAAHQAAAAAQCQ&biw=2560&bih=1271&dpr=1#lkt=LocalPoiReviews&arid=Ci9DQUlRQUNvZENodHljRjlvT2xkRE0yTjJja3QwU1VrNU5URTVUR0ZXVmpoRFlVRRAB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bekijk alle reviews op Google
+              </Link>
+            </Button>
+          </div>
+
+          <GoogleReviewsSection />
+        </div>
+      </section>
+
       {/* Transformations Section */}
       <section className="py-24 bg-zinc-950">
         <div className="container px-4">
@@ -217,24 +248,6 @@ export default function Home() {
               <Link href="/diensten">Begin jouw transformatie</Link>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* Reviews Section */}
-      <section className="py-24 bg-black">
-        <div className="container px-4">
-          <div className="flex flex-col items-center text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              WAT KLANTEN ZEGGEN
-            </h2>
-            <div className="w-20 h-1 bg-red-500 mb-6"></div>
-            <p className="text-white/70 max-w-2xl">
-              Ervaringen van mensen die hun fitnessdoelen hebben bereikt met
-              Mind Over Muscle.
-            </p>
-          </div>
-
-          <GoogleReviewsSection />
         </div>
       </section>
 

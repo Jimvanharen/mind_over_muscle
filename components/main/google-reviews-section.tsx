@@ -46,17 +46,6 @@ export function GoogleReviewsSection() {
 
       <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
         <div className="flex flex-col gap-4">
-          <h4 className="font-bold">Mind over Muscle (eigenaar)</h4>
-          <FiveStars />
-          <p className="text-white/70 text-sm">2 weken geleden</p>
-          <p className="text-white/90 italic">
-            "Bedankt dat je deel hebt genomen aan mijn programma Yordi! Bedankt voor de mooie review! Dit wordt gewaardeerd."
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-zinc-950 p-8 rounded-lg border border-white/10">
-        <div className="flex flex-col gap-4">
           <h4 className="font-bold">Yordi Latumahina</h4>
           <FiveStars />
           <p className="text-white/70 text-sm">Local Guide · 24 reviews · 4 foto's</p>
